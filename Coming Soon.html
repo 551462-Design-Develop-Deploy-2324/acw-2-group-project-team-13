@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///C:/Users/Beya/OneDrive/Desktop/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        body {
+            font-family: Arial, serif;
+            background-image: url('https://images.pexels.com/photos/7149156/pexels-photo-7149156.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Replace 'background-image.jpg' with the path to your background image */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 230px;
+            color: #fff; /* Set text color to white for better visibility */
+            backdrop-filter: blur(6.5px); 
+           
+        }
+
+        h1 {
+            font-size: 80px;
+            color: #fff; /* Set text color to white */
+        }
+
+        p {
+            font-size: 22px;
+            color: #fff; /* Set text color to white */
+            margin-top: 20px;
+        }
+
+        .countdown {
+            font-size: 26px;
+            color: #fff; /* Set text color to white */
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Coming Soon!</h1>
+    <p><strong>Paradise Found:</strong> Experience the ultimate beach getaway.</p>
+        <p>Arranging beachside meals has often proved challenging, especially when delivery services struggle to pinpoint your location. Introducing <em>Beach Basket</em>: your solution to seamless beachside dining!</p>
+        <p>Our innovative app caters to beach enthusiasts, providing a hassle-free platform to order a variety of products directly to your precise location on the shore.</p>
+    <div class="countdown" id="countdown">40d 19h 11m 32s </div>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("March 28, 2024 00:00:00").getTime();
+
+        // Update the countdown every 1 second
+        var x = setInterval(function() {
+            // Get the current date and time
+            var now = new Date().getTime();
+            
+            // Calculate the distance between now and the countdown date
+            var distance = countDownDate - now;
+            
+            // Calculate days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Display the countdown
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+            
+            // If the countdown is over, display a message
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+
+
+</body></html>

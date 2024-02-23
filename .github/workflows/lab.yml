@@ -15,7 +15,7 @@ jobs:
   deploy:
     environment: 
       name: github-pages
-      url: ${{ steps.deployment.outputs.Coming Soon.html }}
+      url: ${{ steps.deployment.outputs.ComingSoon.html }}
     runs-on: ubuntu-latest
 
     steps:

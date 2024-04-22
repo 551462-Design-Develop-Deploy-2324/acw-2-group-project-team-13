@@ -1,0 +1,202 @@
+﻿@page "/menus"
+@rendermode InteractiveServer
+@inject NavigationManager nav
+@using System.Collections.Generic
+@using System
+
+<PageTitle>Menus</PageTitle>
+
+
+<div class="menu-container">
+    <button id="backButton" @onclick="@ToHome">Back</button>
+    <form id="menuForm">
+        <div class="menu_title">
+            <h1>Menus</h1>
+            <button type="button" id="editButton" @onclick="@ToggleEditMode">Edit Menu</button>
+            <button type="button" id="addItemButton" style="@additemButtonStyle" @onclick="@ToggleAddItemModal">Add Item</button>
+        </div>
+        <div class="menu_table">
+            <table id="menuTable">
+                <thead>
+                    <tr>
+                        <th>ItemId</th>
+                        <th>ItemName</th>
+                        <th>ItemPrice</th>
+                        <th style="@deleteColumnStyle"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (MenuItem menuitem in menuItems)
+                    {
+                        <tr>
+                            <td>@menuitem.ItemId</td>
+                            <td>@menuitem.ItemName</td>
+                            <td>£@menuitem.ItemPrice</td>
+                            <td style="border:none"><button type="button" style="@deleteButtonStyle" @onclick="() => DeleteItemFromDB(menuitem,false)">Delete</button></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </form>
+</div>
+
+<div id="addItemModal" class="modal" style="@addItemModalStyle">
+    <div class="modal-content">
+        <span class="close" type="button" @onclick="@ToggleAddItemModal">&times;</span>
+        <label for="itemName">Item Name:</label>
+        <input type="text" @bind-value=@addItem_newName id="itemName" required>
+        <p></p>
+        <label for="itemPrice">Item Price (£):</label>
+        <input type="number" @bind-value=@addItem_newPrice id="itemPrice" required>
+        <button type="submit" id="addItem" @onclick="@AddItemToDb" style="background-color: darkgreen; color: black;">Add</button>
+    </div>
+</div>
+
+
+<div id="confirmationModal" class="modal" style="@confirmationModalStyle">
+    <div class="modal-content">
+        <p id="confirmationMessage">Are you sure you want to delete this item?</p>
+        <div class="modal-buttons">
+            <button type="button" id="confirmDelete" style="background-color: darkgreen; color: black;" @onclick="@ConfirmDeletion">Yes</button>
+            <button type="button" id="cancelDelete" style="background-color: darkred; color: black;" @onclick="@ToggleConfirmationModal">No</button>
+        </div>
+    </div>
+</div>
+
+
+@code{
+    class MenuItem
+    {
+        public int ItemId { get; set; }
+        public string ItemName { get; set; }
+        public double ItemPrice { get; set; }
+
+        public MenuItem(int pitemId,string pitemName,double pitemPrice)
+        {
+            ItemId = pitemId;
+            ItemName = pitemName;
+            ItemPrice = pitemPrice;
+        }
+        public MenuItem()
+        {
+
+        }
+    }
+
+    List<MenuItem> menuItems = new List<MenuItem>
+    {
+        new MenuItem { ItemId = 1, ItemName = "Cheeseburger", ItemPrice = 5.99 },
+        new MenuItem { ItemId = 2, ItemName = "Chicken Sandwich", ItemPrice = 6.49 },
+        new MenuItem { ItemId = 3, ItemName = "Vegetarian Pizza", ItemPrice = 8.99 },
+        new MenuItem { ItemId = 4, ItemName = "Spaghetti Bolognese", ItemPrice = 9.49 },
+        new MenuItem { ItemId = 5, ItemName = "Caesar Salad", ItemPrice = 7.99 }
+    };
+
+
+    void ToHome()
+    {
+        nav.NavigateTo("/home");
+    }
+
+    //Edit button
+    public bool editMode = false;
+    private string deleteButtonStyle = "background-color: darkred; color: black; display:none";
+    private string deleteColumnStyle = "border:none; display:none";
+    private string additemButtonStyle = "display:none; background-color: darkgreen; color: black";
+
+
+    //Modals
+    private string modalStyleOn = "display: block; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);";
+    private string modalStyleOff = "display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);";
+    private string addItemModalStyle = "display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);";
+    private string confirmationModalStyle = "display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);";
+
+    void ToggleAddItemModal()
+    {
+        if(addItemModalStyle == modalStyleOff)
+        {
+            addItemModalStyle = modalStyleOn;
+        }
+        else if(addItemModalStyle == modalStyleOn)
+        {
+            addItemModalStyle = modalStyleOff;
+        }
+    }
+
+    void ToggleConfirmationModal()
+    {
+        if(confirmationModalStyle == modalStyleOff)
+        {
+            confirmationModalStyle = modalStyleOn;
+        }
+        else if(confirmationModalStyle == modalStyleOn)
+        {
+            confirmationModalStyle = modalStyleOff;
+        }
+    }
+
+    void ToggleEditMode()
+    {
+        editMode = !editMode;
+        ToggleEditModeShift();
+    }
+
+    void ToggleEditModeShift()
+    {
+        string deleteButtonStyle_On = "background-color: darkred; color: black; display:inline";
+        string deleteButtonStyle_Off = "background-color: darkred; color: black; display:none";
+        string deleteColumnStyle_On = "border:none; display:table-cell-";
+        string deleteColumnStyle_Off = "border:none; display:none";
+        string additemButton_On = "display:block; background-color: darkgreen; color: black";
+        string additemButton_Off = "display:none; background-color: darkgreen; color: black";
+
+        if (!editMode)
+        {
+            deleteButtonStyle = deleteButtonStyle_Off;
+            deleteColumnStyle = deleteColumnStyle_Off;
+            additemButtonStyle = additemButton_Off;
+            editMode = false;
+        }
+        else
+        {
+            deleteButtonStyle = deleteButtonStyle_On;
+            deleteColumnStyle = deleteColumnStyle_On;
+            additemButtonStyle = additemButton_On;
+            editMode = true;
+        }
+    }
+
+
+    //Adding new Item
+    private int addItem_newId;
+    private string addItem_newName;
+    private double addItem_newPrice;
+
+    void AddItemToDb(){
+        addItem_newId = menuItems.Last().ItemId + 1;
+        MenuItem newMenuItem = new MenuItem(addItem_newId,addItem_newName,addItem_newPrice);
+        menuItems.Add(newMenuItem);
+        ToggleAddItemModal();
+    }
+
+    private MenuItem itemToDelete;
+
+    void DeleteItemFromDB(MenuItem menuItem, bool confirmed){
+        itemToDelete = menuItem;
+        ToggleConfirmationModal();
+    }
+    void ConfirmDeletion(){
+        try
+        {
+            menuItems.Remove(itemToDelete);
+            ToggleConfirmationModal();
+        }
+        catch
+        {
+            Console.WriteLine("Whooops");
+        }
+    }
+}
+
+

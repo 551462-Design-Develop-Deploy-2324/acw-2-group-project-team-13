@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\mkbof\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorBeachBasket.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BlazorBeachBasket.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\mkbof\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\mkbof\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mkbof\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mkbof\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlazorBeachBasket.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BlazorBeachBasket.props",
+      "PackagePath": "build\\BlazorBeachBasket.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BlazorBeachBasket.props",
+      "PackagePath": "buildMultiTargeting\\BlazorBeachBasket.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BlazorBeachBasket.props",
+      "PackagePath": "buildTransitive\\BlazorBeachBasket.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

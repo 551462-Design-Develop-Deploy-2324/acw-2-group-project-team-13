@@ -1,0 +1,32 @@
+﻿@page "/home"
+@rendermode InteractiveServer
+@inject NavigationManager nav;
+
+<PageTitle>Home</PageTitle>
+
+
+<div class="home-container">
+
+    <div id="title">
+        <h1>
+            Restaurant
+        </h1>
+    </div>
+
+
+    <button @onclick="@ToOrders_Main">Orders</button>
+    <p></p>
+    <button @onclick="@ToMenu_Main">Menu</button>
+
+</div>
+
+@code {
+    void ToOrders_Main()
+    {
+        nav.NavigateTo("/orders");
+    }
+    void ToMenu_Main()
+    {
+        nav.NavigateTo("/menus");
+    }
+}

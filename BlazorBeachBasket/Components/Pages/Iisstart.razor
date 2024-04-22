@@ -1,0 +1,15 @@
+﻿@page "/"
+@rendermode InteractiveServer
+@inject NavigationManager nav;
+<PageTitle>IISstart</PageTitle>
+
+<h1>Click here to start</h1>
+
+<button @onclick="@ToRestPOV">Restaurant POV</button>
+
+@code{
+    void ToRestPOV()
+    {
+        nav.NavigateTo("/login");
+    } 
+}

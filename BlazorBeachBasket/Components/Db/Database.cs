@@ -1,6 +1,9 @@
-﻿using Microsoft.AspNetCore.Routing;
+﻿using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Routing;
+using System.Collections;
 using System.ComponentModel.DataAnnotations;
 using System.Data.SQLite;
+using System.Reflection.Metadata;
 using System.Security.Cryptography.X509Certificates;
 using System.Transactions;
 namespace BlazorBeachBasket.Components.Db
@@ -254,6 +257,7 @@ namespace BlazorBeachBasket.Components.Db
         public string ItemName { get; set; }
         public double ItemPrice { get; set; }
         public int Item_RestId { get; set; }
+        public string Item_Imglink { get; set; }
 
         public MenuItem(int pitemId, string pitemName, double pitemPrice, int item_RestId)
         {
@@ -328,6 +332,24 @@ namespace BlazorBeachBasket.Components.Db
             Card_UserId = card_UserId;
         }
         public PaymentCard()
+        {
+
+        }
+    }
+
+    class ImageClass()
+    {
+        public int ImgId { get; set; }
+        public string ImgLink { get; set; }
+        public int Img_ItemId { get; set; }
+
+        public ImageClass(int pImgId, string pImgLink, int pImg_ItemId)
+        {
+            ImgId = pImgId;
+            ImgLink = pImgLink;
+            Img_ItemId = pImg_ItemId;
+        }
+        public ImageClass()
         {
 
         }

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "+RrzAUgFnDdiR31fS9Wr+4huztuZSd/4nsVDy54uGn6AoSY1+PnrKyFUvEIZInwmGnMG2joyiX3vM2DAsGVNxA==",
+  "dgSpecHash": "uBvgtzjv9EKw4gTEBOX3pK8K5+nlxbqPKwLlVgCQbI8GW8ORnenHw4K2ErK3HHoKJyUz9G6JK6Y1nTeiMpb7WQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mkbof\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\BlazorBeachBasket.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\mkbof\\source\\repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\BlazorBeachBasket.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mkbof\\.nuget\\packages\\sqlite\\3.13.0\\sqlite.3.13.0.nupkg.sha512",
+    "C:\\Users\\mkbof\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.118\\stub.system.data.sqlite.core.netstandard.1.0.118.nupkg.sha512",
+    "C:\\Users\\mkbof\\.nuget\\packages\\system.data.sqlite.core\\1.0.118\\system.data.sqlite.core.1.0.118.nupkg.sha512"
+  ],
   "logs": []
 }

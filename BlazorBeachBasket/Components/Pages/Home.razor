@@ -1,5 +1,6 @@
-﻿@page "/home"
+﻿@page "/home/{RestId:int}"
 @rendermode InteractiveServer
+@using Db;
 @inject NavigationManager nav;
 
 <PageTitle>Home</PageTitle>
@@ -9,7 +10,7 @@
 
     <div id="title">
         <h1>
-            Restaurant
+            @restaurant.RestaurantName
         </h1>
     </div>
 
@@ -21,6 +22,19 @@
 </div>
 
 @code {
+    [Parameter]
+    public int RestId { get; set; }
+
+    Database database = new Database();
+    Restaurant restaurant;
+    protected override void OnInitialized()
+    {
+        database.ImportData();
+        database.AssingData();
+        restaurant = new Restaurant(0, "Foodie's Delight", "45C Beverley Street, HU13", "05913487966", 0);
+    }
+    
+
     void ToOrders_Main()
     {
         nav.NavigateTo("/orders");

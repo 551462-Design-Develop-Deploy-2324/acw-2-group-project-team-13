@@ -142,7 +142,7 @@ namespace BlazorBeachBasket.Components.Db
             reader.Close();
 
             //Read Images
-            sql = "SELECT * FROM Images";
+            sql = "SELECT * FROM ImgLinks";
             command = new SQLiteCommand(sql, connection);
             reader = command.ExecuteReader();
 
@@ -192,6 +192,102 @@ namespace BlazorBeachBasket.Components.Db
             foreach (MenuItem menuItem in MenuItems)
             {
                 menuItem.Item_Image = Images.FirstOrDefault(o => o.Img_ItemId == menuItem.ItemId);
+            }
+        }
+        public void ExportData()
+        {
+            string dbfile_path = "URI=file:BeachBasket.db";
+            SQLiteConnection connection = new SQLiteConnection(dbfile_path);
+            connection.Open();
+            string sql;
+            SQLiteCommand cmd;
+
+            //Write Users
+            sql = "DELETE FROM Users";
+            cmd = new SQLiteCommand(sql, connection);
+            cmd.ExecuteNonQuery();
+            foreach(User user in Users)
+            {
+                sql = $"Insert into Users values ({user.UserId},{user.UserType},'{user.Username}','{user.UserPassword})'";
+                cmd = new SQLiteCommand(sql, connection);
+                cmd.ExecuteNonQuery();
+            }
+
+            //Write Restaurants
+            sql = "DELETE FROM Restaurants";
+            cmd = new SQLiteCommand(sql, connection);
+            cmd.ExecuteNonQuery();
+            foreach (Restaurant restaurant in Restaurants)
+            {
+                sql = $"Insert into Restaurants values ({restaurant.RestaurantId},'{restaurant.RestaurantName}','{restaurant.RestaurantAddress}','{restaurant.RestaurantPhone}',{restaurant.Restaurant_UserId})";
+                cmd = new SQLiteCommand(sql, connection);
+                cmd.ExecuteNonQuery();
+            }
+
+            //Write Customers
+            sql = "DELETE FROM Customers";
+            cmd = new SQLiteCommand(sql, connection);
+            cmd.ExecuteNonQuery();
+            foreach(Customer customer in Customers)
+            {
+                sql = $"Insert into Customers values ({customer.CustomerId},'{customer.CustomerName}','{customer.CustomerAddress}','{customer.CustomerPhone}',{customer.Customer_UserId})";
+                cmd = new SQLiteCommand(sql, connection);
+                cmd.ExecuteNonQuery();
+            }
+
+            //Write Drivers
+            sql = "DELETE FROM Drivers";
+            cmd = new SQLiteCommand (sql, connection);
+            cmd.ExecuteNonQuery();
+            foreach (Driver driver in Drivers)
+            {
+                sql = $"Insert into Drivers values ({driver.DriverId},'{driver.DriverName}','{driver.DriverPhone}',{driver.Driver_UserId})";
+                cmd = new SQLiteCommand(sql, connection);
+                cmd.ExecuteNonQuery();
+            }
+
+            //Write MenuItems
+            sql = "DELETE FROM MenuItems";
+            cmd = new SQLiteCommand(sql, connection);
+            cmd.ExecuteNonQuery();
+            foreach (MenuItem menuItem in MenuItems)
+            {
+                sql = $"Insert into MenuItems values ({menuItem.ItemId},'{menuItem.ItemName}',{menuItem.ItemPrice},{menuItem.Item_RestId})";
+                cmd = new SQLiteCommand(sql, connection);
+                cmd.ExecuteNonQuery();
+            }
+
+            //Write Orders
+            sql = "DELETE FROM Orders";
+            cmd = new SQLiteCommand(sql, connection);
+            cmd.ExecuteNonQuery();
+            foreach(Order order in Orders)
+            {
+                sql = $"Insert into Orders values ({order.orderId},{order.orderCost},'{order.order_ItemIds}','{order.orderStatus_str}',{order.order_restaurantId},{order.order_customerId},{order.order_driverId})";
+                cmd = new SQLiteCommand(sql, connection);
+                cmd.ExecuteNonQuery();
+            }
+
+            //Write PaymentCards
+            sql = "DELETE FROM PaymentCards";
+            cmd = new SQLiteCommand(sql, connection);
+            cmd.ExecuteNonQuery();
+            foreach(PaymentCard card in PaymentCards)
+            {
+                sql = $"Insert into PaymentCards values ({card.CardId},'{card.CardName}',{card.Card16digit},'{card.CardValid}','{card.CardExpiry}',{card.CardCVC},{card.Card_UserId})";
+                cmd = new SQLiteCommand(sql, connection);
+                cmd.ExecuteNonQuery();
+            }
+
+            //Write Images
+            sql = "DELETE FROM ImgLinks";
+            cmd = new SQLiteCommand(sql, connection);
+            cmd.ExecuteNonQuery();
+            foreach (Image img in Images)
+            {
+                sql = $"Insert into ImgLinks values ({img.ImgId},'{img.ImgLink}',{img.Img_ItemId})";
+                cmd = new SQLiteCommand(sql, connection);
+                cmd.ExecuteNonQuery();
             }
         }
     }
@@ -365,7 +461,6 @@ namespace BlazorBeachBasket.Components.Db
 
         }
     }
-
     class Image
     {
         public int ImgId;

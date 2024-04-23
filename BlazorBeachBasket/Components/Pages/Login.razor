@@ -1,6 +1,8 @@
 ﻿@page "/login"
 @rendermode InteractiveServer
 @inject NavigationManager nav;
+@using Db
+
 <PageTitle>Login</PageTitle>
 
 <div class="login-container">
@@ -30,17 +32,23 @@
     private string Username { get; set; }
     private string Password { get; set; }
 
+    Database database = new Database();
+    protected override void OnInitialized()
+    {
+        database.ImportData();
+        database.AssingData();
+    }
+
     void LoginAuth()
     {
-        
-        if(Username == "user" && Password == "password")
+        foreach(User user in database.Users)
         {
-            nav.NavigateTo("/home");
-
-        }
-        else
-        {
-            Console.WriteLine("Error, invalid login");
+            if(user.Username == Username && user.UserPassword == Password && user.UserType == 0)
+            {
+                Restaurant restaurant = database.Restaurants.FirstOrDefault(o => o.Restaurant_UserId == user.UserId);
+                string restID = restaurant.RestaurantId.ToString();
+                nav.NavigateTo("/home/{restID}");
+            }
         }
     }
 }

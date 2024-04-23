@@ -1,7 +1,7 @@
 using BlazorBeachBasket.Components;
-
+using BlazorBeachBasket.Components.Db;
 var builder = WebApplication.CreateBuilder(args);
-
+Database database = new Database();
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();

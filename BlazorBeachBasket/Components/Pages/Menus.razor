@@ -3,6 +3,7 @@
 @inject NavigationManager nav
 @using System.Collections.Generic
 @using Db
+@using BlazorBeachBasket
 
 <PageTitle>Menus</PageTitle>
 
@@ -66,8 +67,7 @@
 
 
 @code{
-    Database database;
-
+    Database database = new Database();
     protected override void OnInitialized()
     {
         database.ImportData();

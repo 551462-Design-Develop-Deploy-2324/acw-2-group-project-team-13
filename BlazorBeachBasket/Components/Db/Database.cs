@@ -337,19 +337,20 @@ namespace BlazorBeachBasket.Components.Db
         }
     }
 
-    class ImageClass()
+    class Image
     {
-        public int ImgId { get; set; }
-        public string ImgLink { get; set; }
-        public int Img_ItemId { get; set; }
+        public int ImgId;
+        public string ImgLink;
+        public int Img_ItemId;
 
-        public ImageClass(int pImgId, string pImgLink, int pImg_ItemId)
+        public Image(int pImgId, string pImgLink, int pImg_ItemId)
         {
             ImgId = pImgId;
             ImgLink = pImgLink;
             Img_ItemId = pImg_ItemId;
         }
-        public ImageClass()
+
+        public Image()
         {
 
         }

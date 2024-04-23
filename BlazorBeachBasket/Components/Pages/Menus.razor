@@ -2,7 +2,7 @@
 @rendermode InteractiveServer
 @inject NavigationManager nav
 @using System.Collections.Generic
-@using System
+@using Db
 
 <PageTitle>Menus</PageTitle>
 
@@ -26,7 +26,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (MenuItem menuitem in menuItems)
+                    @foreach (MenuItem menuitem in database.MenuItems)
                     {
                         <tr>
                             <td>@menuitem.ItemId</td>
@@ -66,22 +66,12 @@
 
 
 @code{
-    class MenuItem
+    Database database;
+
+    protected override void OnInitialized()
     {
-        public int ItemId { get; set; }
-        public string ItemName { get; set; }
-        public double ItemPrice { get; set; }
-
-        public MenuItem(int pitemId,string pitemName,double pitemPrice)
-        {
-            ItemId = pitemId;
-            ItemName = pitemName;
-            ItemPrice = pitemPrice;
-        }
-        public MenuItem()
-        {
-
-        }
+        database.ImportData();
+        database.AssingData();
     }
 
     List<MenuItem> menuItems = new List<MenuItem>
@@ -175,8 +165,8 @@
 
     void AddItemToDb(){
         addItem_newId = menuItems.Last().ItemId + 1;
-        MenuItem newMenuItem = new MenuItem(addItem_newId,addItem_newName,addItem_newPrice);
-        menuItems.Add(newMenuItem);
+        //MenuItem newMenuItem = new MenuItem(addItem_newId,addItem_newName,addItem_newPrice);
+        //menuItems.Add(newMenuItem);
         ToggleAddItemModal();
     }
 

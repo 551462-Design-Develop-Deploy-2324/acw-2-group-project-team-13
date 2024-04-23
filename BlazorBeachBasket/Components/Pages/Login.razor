@@ -19,7 +19,7 @@
             <input type="password" @bind-value=@Password id="password" required>
         </div>
 
-        <button @onclick="@LoginAuth">Login</button>
+        <button @onclick="@LoginAuth" type="button">Login</button>
 
         <p></p>
     </form>
@@ -35,12 +35,12 @@
         
         if(Username == "user" && Password == "password")
         {
-            nav.NavigateTo("/home", forceLoad: true);
+            nav.NavigateTo("/home");
+
         }
         else
         {
             Console.WriteLine("Error, invalid login");
         }
     }
-
 }

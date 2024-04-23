@@ -8,19 +8,26 @@ using System.Security.Cryptography.X509Certificates;
 using System.Transactions;
 namespace BlazorBeachBasket.Components.Db
 {
-    public class Database
+    class Database
     {
-        List<User> Users = new List<User>();
-        List<Restaurant> Restaurants = new List<Restaurant>();
-        List<Customer> Customers = new List<Customer>();
-        List<Driver> Drivers = new List<Driver>();
-        List<MenuItem> MenuItems = new List<MenuItem>();
-        List<Order> Orders = new List<Order>();
-        List<PaymentCard> PaymentCards = new List<PaymentCard>();
-
+        public List<User> Users;
+        public List<Restaurant> Restaurants;
+        public List<Customer> Customers;
+        public List<Driver> Drivers;
+        public List<MenuItem> MenuItems;
+        public List<Order> Orders;
+        public List<PaymentCard> PaymentCards;
+        public List<Image> Images;
         public Database()
         {
-
+            Users = new List<User>();
+            Restaurants = new List<Restaurant>();
+            Customers = new List<Customer>();
+            Drivers = new List<Driver>();
+            MenuItems = new List<MenuItem>();
+            Orders = new List<Order>();
+            PaymentCards = new List<PaymentCard>();
+            Images = new List<Image>();
         }
 
         public void ImportData()
@@ -129,10 +136,27 @@ namespace BlazorBeachBasket.Components.Db
                 while (reader.Read())
                 {
                     PaymentCard card = new PaymentCard(int.Parse(reader[0].ToString()), reader[1].ToString(), int.Parse(reader[2].ToString()), reader[3].ToString(), reader[4].ToString(), int.Parse(reader[5].ToString()), int.Parse(reader[6].ToString()));
+                    PaymentCards.Add(card);
+                }
+            }
+            reader.Close();
+
+            //Read Images
+            sql = "SELECT * FROM Images";
+            command = new SQLiteCommand(sql, connection);
+            reader = command.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    Image image = new Image(int.Parse(reader[0].ToString()), reader[1].ToString(), int.Parse(reader[2].ToString()));
+                    Images.Add(image);
                 }
             }
             reader.Close();
             connection.Close();
+
         }
         public void AssingData()
         {
@@ -163,6 +187,11 @@ namespace BlazorBeachBasket.Components.Db
                     MenuItem menuItem = MenuItems.FirstOrDefault(o => o.ItemId == int.Parse(itemId));
                     order.Order_items.Add(menuItem);
                 }
+            }
+
+            foreach (MenuItem menuItem in MenuItems)
+            {
+                menuItem.Item_Image = Images.FirstOrDefault(o => o.Img_ItemId == menuItem.ItemId);
             }
         }
     }
@@ -257,7 +286,7 @@ namespace BlazorBeachBasket.Components.Db
         public string ItemName { get; set; }
         public double ItemPrice { get; set; }
         public int Item_RestId { get; set; }
-        public string Item_Imglink { get; set; }
+        public Image Item_Image { get; set; }
 
         public MenuItem(int pitemId, string pitemName, double pitemPrice, int item_RestId)
         {

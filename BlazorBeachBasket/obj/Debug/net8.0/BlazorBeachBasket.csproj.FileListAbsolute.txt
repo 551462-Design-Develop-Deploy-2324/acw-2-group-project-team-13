@@ -55,3 +55,14 @@ C:\Users\mkbof\Source\Repos\acw-2-group-project-team-13\BlazorBeachBasket\obj\De
 C:\Users\mkbof\Source\Repos\acw-2-group-project-team-13\BlazorBeachBasket\obj\Debug\net8.0\BlazorBeachBasket.pdb
 C:\Users\mkbof\Source\Repos\acw-2-group-project-team-13\BlazorBeachBasket\obj\Debug\net8.0\BlazorBeachBasket.genruntimeconfig.cache
 C:\Users\mkbof\Source\Repos\acw-2-group-project-team-13\BlazorBeachBasket\obj\Debug\net8.0\ref\BlazorBeachBasket.dll
+C:\Users\mkbof\source\repos\acw-2-group-project-team-13\BlazorBeachBasket\obj\Debug\net8.0\BlazorBeachBasket.csproj.AssemblyReference.cache
+C:\Users\mkbof\source\repos\acw-2-group-project-team-13\BlazorBeachBasket\bin\Debug\net8.0\System.Data.SQLite.dll
+C:\Users\mkbof\source\repos\acw-2-group-project-team-13\BlazorBeachBasket\bin\Debug\net8.0\runtimes\linux-x64\native\libsqlite3.so
+C:\Users\mkbof\source\repos\acw-2-group-project-team-13\BlazorBeachBasket\bin\Debug\net8.0\runtimes\osx-x64\native\libsqlite3.dylib
+C:\Users\mkbof\source\repos\acw-2-group-project-team-13\BlazorBeachBasket\bin\Debug\net8.0\runtimes\win7-x64\native\sqlite3.dll
+C:\Users\mkbof\source\repos\acw-2-group-project-team-13\BlazorBeachBasket\bin\Debug\net8.0\runtimes\win7-x86\native\sqlite3.dll
+C:\Users\mkbof\source\repos\acw-2-group-project-team-13\BlazorBeachBasket\bin\Debug\net8.0\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\mkbof\source\repos\acw-2-group-project-team-13\BlazorBeachBasket\bin\Debug\net8.0\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\mkbof\source\repos\acw-2-group-project-team-13\BlazorBeachBasket\bin\Debug\net8.0\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\mkbof\source\repos\acw-2-group-project-team-13\BlazorBeachBasket\bin\Debug\net8.0\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\mkbof\source\repos\acw-2-group-project-team-13\BlazorBeachBasket\obj\Debug\net8.0\BlazorBe.E5EC919B.Up2Date

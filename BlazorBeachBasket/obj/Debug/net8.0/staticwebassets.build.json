@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VmyTUQDx/N3XNDhd/I7Y9y5D6jos8X2dfujto+vTWDM=",
+  "Hash": "8B594e1dIT1ZbM7Uk2spGp45TF60r7dXHHrNrLZyPKU=",
   "Source": "BlazorBeachBasket",
   "BasePath": "_content/BlazorBeachBasket",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BlazorBeachBasket\\wwwroot",
       "Source": "BlazorBeachBasket",
-      "ContentRoot": "C:\\Users\\724856\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\",
+      "ContentRoot": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\",
       "BasePath": "_content/BlazorBeachBasket",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\724856\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorBeachBasket.styles.css",
+      "Identity": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorBeachBasket.styles.css",
       "SourceId": "BlazorBeachBasket",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\724856\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/BlazorBeachBasket",
       "RelativePath": "BlazorBeachBasket.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\724856\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorBeachBasket.styles.css"
+      "OriginalItemSpec": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorBeachBasket.styles.css"
     },
     {
-      "Identity": "C:\\Users\\724856\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorBeachBasket.bundle.scp.css",
+      "Identity": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorBeachBasket.bundle.scp.css",
       "SourceId": "BlazorBeachBasket",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\724856\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/BlazorBeachBasket",
       "RelativePath": "BlazorBeachBasket.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\724856\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorBeachBasket.bundle.scp.css"
+      "OriginalItemSpec": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorBeachBasket.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\724856\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\app.css",
+      "Identity": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\app.css",
       "SourceId": "BlazorBeachBasket",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\724856\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\",
+      "ContentRoot": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\",
       "BasePath": "_content/BlazorBeachBasket",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "C:\\Users\\724856\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "BlazorBeachBasket",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\724856\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\",
+      "ContentRoot": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\",
       "BasePath": "_content/BlazorBeachBasket",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\724856\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "BlazorBeachBasket",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\724856\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\",
+      "ContentRoot": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\",
       "BasePath": "_content/BlazorBeachBasket",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\724856\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\favicon.png",
+      "Identity": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\favicon.png",
       "SourceId": "BlazorBeachBasket",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\724856\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\",
+      "ContentRoot": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\",
       "BasePath": "_content/BlazorBeachBasket",
       "RelativePath": "favicon.png",
       "AssetKind": "All",

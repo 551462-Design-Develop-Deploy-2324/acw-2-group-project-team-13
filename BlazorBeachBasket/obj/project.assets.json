@@ -130,23 +130,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\724856\\.nuget\\packages\\": {},
+    "C:\\Users\\mkbof\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\724856\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\BlazorBeachBasket.csproj",
+      "projectUniqueName": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\BlazorBeachBasket.csproj",
       "projectName": "BlazorBeachBasket",
-      "projectPath": "C:\\Users\\724856\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\BlazorBeachBasket.csproj",
-      "packagesPath": "C:\\Users\\724856\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\724856\\Source\\Repos\\acw-2-group-project-team-13\\BlazorBeachBasket\\obj\\",
+      "projectPath": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\BlazorBeachBasket.csproj",
+      "packagesPath": "C:\\Users\\mkbof\\.nuget\\packages\\",
+      "outputPath": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\724856\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mkbof\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -168,6 +168,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -202,7 +207,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

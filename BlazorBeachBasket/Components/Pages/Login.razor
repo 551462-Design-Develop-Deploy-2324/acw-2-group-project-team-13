@@ -43,11 +43,23 @@
     {
         foreach(User user in database.Users)
         {
-            if(user.Username == Username && user.UserPassword == Password && user.UserType == 0)
+            if(user.Username == Username && user.UserPassword == Password)
             {
-                Restaurant restaurant = database.Restaurants.FirstOrDefault(o => o.Restaurant_UserId == user.UserId);
-                string restID = restaurant.RestaurantId.ToString();
-                nav.NavigateTo("/home/{restID}");
+                if (user.UserType == 0)
+                {
+                    Restaurant restaurant = database.Restaurants.FirstOrDefault(o => o.Restaurant_UserId == user.UserId);
+                    string restID = restaurant.RestaurantId.ToString();
+                    nav.NavigateTo("/home/{restID}");
+                }
+                else if(user.UserType == 1)
+                {
+                    //Customer
+                    Customer customer = database.Customers.FirstOrDefault(o => o.Customer_UserId == user.UserId);
+                }
+                else if(user.UserType == 2)
+                {
+                    //Driver
+                }
             }
         }
     }

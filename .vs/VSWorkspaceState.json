@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\BlazorBeachBasket",
+    "\\BlazorBeachBasket\\Components",
+    "\\BlazorBeachBasket\\Components\\Pages"
   ],
-  "SelectedNode": "\\BlazorBeachBasket.sln",
+  "SelectedNode": "\\BlazorBeachBasket\\Components\\Pages\\Menus.razor",
   "PreviewInSolutionExplorer": false
 }

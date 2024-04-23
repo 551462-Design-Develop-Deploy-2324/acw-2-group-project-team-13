@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Password Icon</title>
+    <style>
+        /* Container style */
+        .password-container {
+            position: relative;
+        }
+
+        /* Password input field style */
+        .password-input {
+            padding-right: 30px; /* Add space for the icon */
+        }
+
+        /* Show/hide password icon style */
+        .password-toggle-icon {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="password-container">
+    <!-- Password input field -->
+    <input type="password" id="passwordInput" class="password-input" placeholder="Enter password">
+
+    <!-- Show/hide password icon -->
+    <img src="eye-closed.png" id="passwordToggle" class="password-toggle-icon" onclick="togglePasswordVisibility()" alt="Toggle password visibility">
+</div>
+
+<script>
+    function togglePasswordVisibility() {
+        const passwordInput = document.getElementById("passwordInput");
+        const passwordToggle = document.getElementById("passwordToggle");
+
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text"; // Show password
+            passwordToggle.src = "eye-open.png"; // Change icon to open eye
+        } else {
+            passwordInput.type = "password"; // Hide password
+            passwordToggle.src = "eye-closed.png"; // Change icon to closed eye
+        }
+    }
+</script>
+
+</body>
+</html>

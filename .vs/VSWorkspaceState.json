@@ -3,8 +3,9 @@
     "",
     "\\BlazorBeachBasket",
     "\\BlazorBeachBasket\\Components",
+    "\\BlazorBeachBasket\\Components\\Db",
     "\\BlazorBeachBasket\\Components\\Pages"
   ],
-  "SelectedNode": "\\BlazorBeachBasket\\Components\\Pages\\Menus.razor",
+  "SelectedNode": "\\BlazorBeachBasket\\Components\\Db\\Database.cs",
   "PreviewInSolutionExplorer": false
 }

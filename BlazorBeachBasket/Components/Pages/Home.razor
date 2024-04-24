@@ -18,7 +18,9 @@
     <button @onclick="@ToOrders_Main">Orders</button>
     <p></p>
     <button @onclick="@ToMenu_Main">Menu</button>
-
+    <p></p>
+    <p></p>
+    <button @onclick="@LogOut" style="background-color: darkred">Logout</button>
 </div>
 
 @code {
@@ -31,15 +33,21 @@
     {
         database.ImportData();
         database.AssingData();
+        restaurant = database.Restaurants.FirstOrDefault(o => o.RestaurantId == RestId);
     }
-    
+
 
     void ToOrders_Main()
     {
-        nav.NavigateTo("/orders");
+        nav.NavigateTo($"/orders/{RestId}");
     }
     void ToMenu_Main()
     {
-        nav.NavigateTo("/menus");
+        nav.NavigateTo($"/menus/{RestId}");
+    }
+
+    void LogOut()
+    {
+        nav.NavigateTo("/Login");
     }
 }

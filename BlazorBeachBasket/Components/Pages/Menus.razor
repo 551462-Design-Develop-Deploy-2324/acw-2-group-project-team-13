@@ -1,4 +1,4 @@
-﻿@page "/menus"
+﻿@page "/menus/{RestId:int}"
 @rendermode InteractiveServer
 @inject NavigationManager nav
 @using System.Collections.Generic
@@ -12,7 +12,8 @@
     <button id="backButton" @onclick="@ToHome">Back</button>
     <form id="menuForm">
         <div class="menu_title">
-            <h1>Menus</h1>
+            <h1>@restaurant.RestaurantName</h1>
+            <h2>Menu</h2>
             <button type="button" id="editButton" @onclick="@ToggleEditMode">Edit Menu</button>
             <button type="button" id="addItemButton" style="@additemButtonStyle" @onclick="@ToggleAddItemModal">Add Item</button>
         </div>
@@ -27,12 +28,12 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (MenuItem menuitem in database.MenuItems)
+                    @foreach (MenuItem menuitem in restaurant.Rest_Menu)
                     {
                         <tr>
                             <td>@menuitem.ItemId</td>
                             <td>@menuitem.ItemName</td>
-                            <td>£@menuitem.ItemPrice</td>
+                            <td>£@menuitem.ItemPrice.ToString("0.00")</td>
                             <td style="border:none"><button type="button" style="@deleteButtonStyle" @onclick="() => DeleteItemFromDB(menuitem,false)">Delete</button></td>
                         </tr>
                     }
@@ -67,26 +68,22 @@
 
 
 @code{
+    [Parameter]
+    public int RestId { get; set; }
+    
+    
+    Restaurant restaurant;
     Database database = new Database();
     protected override void OnInitialized()
     {
         database.ImportData();
         database.AssingData();
+        restaurant = database.Restaurants.FirstOrDefault(o => o.RestaurantId == RestId);
     }
-
-    List<MenuItem> menuItems = new List<MenuItem>
-    {
-        new MenuItem { ItemId = 1, ItemName = "Cheeseburger", ItemPrice = 5.99 },
-        new MenuItem { ItemId = 2, ItemName = "Chicken Sandwich", ItemPrice = 6.49 },
-        new MenuItem { ItemId = 3, ItemName = "Vegetarian Pizza", ItemPrice = 8.99 },
-        new MenuItem { ItemId = 4, ItemName = "Spaghetti Bolognese", ItemPrice = 9.49 },
-        new MenuItem { ItemId = 5, ItemName = "Caesar Salad", ItemPrice = 7.99 }
-    };
-
 
     void ToHome()
     {
-        nav.NavigateTo("/home");
+        nav.NavigateTo($"/home/{RestId}");
     }
 
     //Edit button
@@ -164,9 +161,9 @@
     private double addItem_newPrice;
 
     void AddItemToDb(){
-        addItem_newId = menuItems.Last().ItemId + 1;
-        //MenuItem newMenuItem = new MenuItem(addItem_newId,addItem_newName,addItem_newPrice);
-        //menuItems.Add(newMenuItem);
+        addItem_newId = restaurant.Rest_Menu.Last().ItemId + 1;
+        MenuItem newMenuItem = new MenuItem(addItem_newId,addItem_newName,addItem_newPrice,RestId);
+        restaurant.Rest_Menu.Add(newMenuItem);
         ToggleAddItemModal();
     }
 
@@ -179,7 +176,7 @@
     void ConfirmDeletion(){
         try
         {
-            menuItems.Remove(itemToDelete);
+            restaurant.Rest_Menu.Remove(itemToDelete);
             ToggleConfirmationModal();
         }
         catch

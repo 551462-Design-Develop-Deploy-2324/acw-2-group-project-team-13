@@ -135,7 +135,7 @@ namespace BlazorBeachBasket.Components.Db
             {
                 while (reader.Read())
                 {
-                    PaymentCard card = new PaymentCard(int.Parse(reader[0].ToString()), reader[1].ToString(), int.Parse(reader[2].ToString()), reader[3].ToString(), reader[4].ToString(), int.Parse(reader[5].ToString()), int.Parse(reader[6].ToString()));
+                    PaymentCard card = new PaymentCard(int.Parse(reader[0].ToString()), reader[1].ToString(), reader[2].ToString(), reader[3].ToString(), reader[4].ToString(), int.Parse(reader[5].ToString()), int.Parse(reader[6].ToString()));
                     PaymentCards.Add(card);
                 }
             }
@@ -441,12 +441,12 @@ namespace BlazorBeachBasket.Components.Db
     {
         public int CardId;
         public string CardName;
-        public int Card16digit;
+        public string Card16digit;
         public string CardValid;
         public string CardExpiry;
         public int CardCVC;
         public int Card_UserId;
-        public PaymentCard(int cardId, string cardName, int card16digit, string cardValid, string cardExpiry, int cardCVC, int card_UserId)
+        public PaymentCard(int cardId, string cardName, string card16digit, string cardValid, string cardExpiry, int cardCVC, int card_UserId)
         {
             CardId = cardId;
             CardName = cardName;

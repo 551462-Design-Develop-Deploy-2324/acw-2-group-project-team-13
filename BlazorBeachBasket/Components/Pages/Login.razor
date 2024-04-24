@@ -48,8 +48,8 @@
                 if (user.UserType == 0)
                 {
                     Restaurant restaurant = database.Restaurants.FirstOrDefault(o => o.Restaurant_UserId == user.UserId);
-                    string restID = restaurant.RestaurantId.ToString();
-                    nav.NavigateTo("/home/{restID}");
+                    string newUrl = $"/home/{restaurant.RestaurantId.ToString()}";
+                    nav.NavigateTo(newUrl);
                 }
                 else if(user.UserType == 1)
                 {

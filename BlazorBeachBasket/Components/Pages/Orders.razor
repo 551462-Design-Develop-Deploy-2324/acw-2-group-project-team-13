@@ -1,12 +1,15 @@
-﻿@page "/orders"
+﻿@page "/orders/{RestId:int}"
 @rendermode InteractiveServer
 @inject NavigationManager nav
-
+@using System.Collections.Generic
+@using Db
+@using BlazorBeachBasket
 <PageTitle>Orders</PageTitle>
 
 <div class="orders-container">
     <div class="header">
         <button type="button" class="back-btn" @onclick="@ToHome">Back</button>
+        <h1>@restaurant.RestaurantName</h1>
         <h2>Latest Orders</h2>
         <button class="update-btn" onclick="toggleActionsColumn()">Update Status</button>
     </div>
@@ -44,16 +47,24 @@
 
 
 @code {
+    [Parameter]
+    public int RestId { get; set; }
+
+
+    Restaurant restaurant;
+    Database database = new Database();
+    protected override void OnInitialized()
+    {
+        database.ImportData();
+        database.AssingData();
+        restaurant = database.Restaurants.FirstOrDefault(o => o.RestaurantId == RestId);
+    }
 
     void ToHome()
     {
-        nav.NavigateTo("/home");
+        nav.NavigateTo($"/home/{RestId}");
     }
-    
-    
-    
-    
-    //<button class="refresh-btn" onclick="location.reload()">Refresh</button>
+   
 }
 
             

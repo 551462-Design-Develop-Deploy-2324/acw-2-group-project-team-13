@@ -3,10 +3,13 @@
   "WorkspaceRootPath": "M:\\Code\\acw-2-group-project-team-13\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\pages\\orders.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\pages\\orders.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+=======
+>>>>>>> 7f75d64d2d46b2c3a69026584e863e7a9ca6cec6
       "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\pages\\menus.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\pages\\menus.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -30,9 +33,10 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
+<<<<<<< HEAD
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Orders.razor",
@@ -46,6 +50,8 @@
               "EditorCaption": ""
             },
             {
+=======
+>>>>>>> 7f75d64d2d46b2c3a69026584e863e7a9ca6cec6
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
@@ -63,6 +69,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
               "Title": "Home.razor",
               "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\Home.razor",
@@ -72,11 +79,26 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-24T20:43:27.766Z",
+=======
+              "DocumentIndex": 0,
+              "Title": "Menus.razor",
+              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\Menus.razor",
+              "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Pages\\Menus.razor",
+              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\Menus.razor",
+              "RelativeToolTip": "BlazorBeachBasket\\Components\\Pages\\Menus.razor",
+              "ViewState": "AQIAAI4AAAAAAAAAAAAvwKgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-23T14:03:24.331Z",
+>>>>>>> 7f75d64d2d46b2c3a69026584e863e7a9ca6cec6
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 2,
+=======
+              "DocumentIndex": 1,
+>>>>>>> 7f75d64d2d46b2c3a69026584e863e7a9ca6cec6
               "Title": "Database.cs",
               "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Db\\Database.cs",
               "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Db\\Database.cs",
@@ -84,6 +106,7 @@
               "RelativeToolTip": "BlazorBeachBasket\\Components\\Db\\Database.cs",
               "ViewState": "AQIAAHUBAAAAAAAAAAAiwMABAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2024-04-24T20:40:50.455Z",
               "EditorCaption": ""
             },
@@ -112,6 +135,9 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-24T20:39:46.752Z",
               "EditorCaption": ""
+=======
+              "WhenOpened": "2024-04-23T07:42:14.257Z"
+>>>>>>> 7f75d64d2d46b2c3a69026584e863e7a9ca6cec6
             }
           ]
         }

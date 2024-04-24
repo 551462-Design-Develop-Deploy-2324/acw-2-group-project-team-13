@@ -6,6 +6,9 @@
     "\\BlazorBeachBasket\\Components\\Db",
     "\\BlazorBeachBasket\\Components\\Pages"
   ],
+<<<<<<< HEAD
   "SelectedNode": "\\BlazorBeachBasket\\Components\\Db\\Database.cs",
+=======
+>>>>>>> 7f75d64d2d46b2c3a69026584e863e7a9ca6cec6
   "PreviewInSolutionExplorer": false
 }

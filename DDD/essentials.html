@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essentials</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: #F6F6F6;
+            font-family: Georgia;
+            margin: 0;
+            padding: 0;
+        }
+        .image img:hover {
+    transform: scale(1.1); /* Scale up the image by 10% when hovered over */
+}
+        .top-section {
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 30px;
+            border: 0px solid transparent;
+            position: relative;
+            z-index: 2; /* Increase z-index to make the navigation bar appear on top */
+        }
+
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+            margin-right: 20px;
+            font-weight: 900;
+        }
+        .icons .heart-icon {
+    font-size: 45px; /* Adjust the font size as needed */
+}
+        .search-bar {
+            width: 600px;
+            height: 28px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 0 auto;
+        }
+
+        .icons {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .icons span {
+            font-size: 28px;
+            margin-left: 10px;
+        }
+
+        .horizontal-menu {
+            padding: 10px 20px;
+            border-bottom: 1px solid white;
+            z-index: 2; /* Increase z-index to make the navigation bar appear on top */
+            text-align: center; /* Center the menu items */
+            background-color: transparent; /* Remove background color */
+        }
+
+        .horizontal-menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .horizontal-menu li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        .horizontal-menu li a {
+            color: black; /* Text color */
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .carousel-container {
+            width: 100%;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            margin-top: 0px; /* Add margin to separate from the navigation bar */
+        }
+
+        .mySlides {
+            display: none;
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        /* Slideshow text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        /* Style for Nearby Stores, Most Popular Stores, and Top Rated Stores section */
+        .stores-section {
+            text-align: left;
+            margin-top: 30px;
+            margin-left: 40px;
+        }
+
+        .store-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .stores-section.filtered-results {
+    display: none; /* Hide the filtered results section by default */
+}
+        .store {
+    width: calc(25% - 20px); /* Set width to 25% of the container width minus margin */
+    margin-right: 20px; /* Add margin to separate each store */
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+}
+.horizontal-menu li a:hover {
+    font-size: 15px; /* Increase font size on hover */
+   
+}
+
+.store:hover img {
+    transform: scale(1.1); /* Scale up the image by 10% when hovered over */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+        .store img {
+    width: 300px; /* Set the desired width */
+    height: 200px; /* Set the desired height */
+    margin: 35px; /* Add margin around the images */
+}
+
+
+        .store-details {
+            margin-top: 10px;
+        
+        }
+
+        .store-name {
+            font-weight: bold;
+        }
+
+        .store-ratings {
+            color: gold;
+        }
+
+        .store-distance {
+            color: grey;
+        }
+
+        a.logo {
+    color: inherit; /* Set the color to inherit from its parent */
+    text-decoration: none; /* Remove underline */
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: 2px solid #dee2e6;
+    margin-top: 50px; 
+}
+
+footer div {
+    flex: 1;
+    margin: 0 10px;
+}
+
+footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+
+footer ul li a:hover {
+    color: #007bff;
+}
+
+/* Apply styling to filtered images */
+.stores-section .store.filtered {
+    width: calc(33.33% - 20px); /* Set width to approximately one-third of the container width minus margin */
+    margin: 0 10px 20px 0; /* Add margin to separate each store and create space between rows */
+    display: inline-block; /* Display stores in a row */
+    vertical-align: top; /* Align stores to the top */
+}
+
+.stores-section .store.filtered img {
+    width: 100%; /* Set the image width to 100% of its container */
+    height: auto; /* Automatically adjust image height to maintain aspect ratio */
+}
+
+    </style>
+</head>
+<body>
+    <div class="top-section">
+        <a href="index.html" class="logo">BEACH BASKET</a>
+
+        <input type="text" id="searchInput" class="search-bar" placeholder="Search...">
+        <div class="icons">
+            <span class="fas fa-user" onclick="viewAccount()"></span> 
+            <span class="heart-icon">&#x2661;</span>
+            <span class='fas fa-shopping-basket' style='font-size:28px'></span>
+        </div>
+    </div>
+    
+    <nav class="horizontal-menu">
+        <ul>
+            <!-- Update menu items to reflect beach essentials -->
+            <li><a href="#">Sunglasses</a></li>
+            <li><a href="#">Flip-Flops</a></li>
+            <li><a href="#">Beach Towels</a></li>
+            <li><a href="#">Sunscreen</a></li>
+            <li><a href="#">Hats</a></li>
+            <li><a href="#">Bags</a></li>
+            <li><a href="#">Chairs</a></li>
+            <li><a href="#">Umbrellas</a></li>
+            <li><a href="#">Swimwear</a></li>
+            <li><a href="#">Toys</a></li>
+           
+            <li><a href="#">Snorkeling Gear</a></li>
+            <!-- You can add more items as needed -->
+        </ul>
+    </nav>
+    
+    
+  <!-- Slideshow container -->
+  <div class="carousel-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="swimsuit.jpg" style="width:100%">
+        <div class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="sunglasses.jpg" style="width:100%">
+        <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="beach.png" style="width:100%">
+        <div class="text">Caption Three</div>
+    </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+<!-- Nearby Stores Section -->
+<section class="stores-section nearby-stores">
+    <h2>Nearby Stores</h2>
+    <div class="store-images" id="storeimages"> <!-- Change to lowercase -->
+        <!-- Store images will be dynamically generated here -->
+    </div>
+</section>
+
+<!-- Most Popular Stores Section -->
+<section class="stores-section popular-stores">
+    <h2>Most Popular Stores</h2>
+    <div class="store-images" id="popularstoreimages"> <!-- Change to lowercase -->
+        <!-- Popular store images will be dynamically generated here -->
+    </div>
+</section>
+
+<!-- Top Rated Stores Section -->
+<section class="stores-section top-rated-stores">
+    <h2>Top Rated Stores</h2>
+    <div class="store-images" id="topratedstoreimages"> <!-- Change to lowercase -->
+        <!-- Top rated store images will be dynamically generated here -->
+    </div>
+</section>
+
+
+
+
+<section class="stores-section filtered-results">
+    <h2>Filtered Results</h2>
+    <div class="store-images" id="filteredStoreImages">
+        <!-- Filtered store images will be dynamically generated here -->
+    </div>
+    <div class="search-results" id="searchResults">
+        <!-- Search results will be displayed here -->
+    </div>
+</section>
+
+
+    
+<script>
+    // Data for stores
+    const stores = [
+        { name: "Bob hats", category: "Hats", rating: 4, deliveryTime: "12-13 minutes", image: "eimage1.jpg" },
+        { name: "Luxery hats", category: "Hats", rating: 5, deliveryTime: "10-11 minutes", image: "eimage2.jpg" },
+        { name: "Sam's sunscreen", category: "Sunscreen", rating: 3, deliveryTime: "15-16 minutes", image: "eimage3.jpg" },
+        { name: "Sunscreen Heaven", category: "Sunscreen", rating: 4, deliveryTime: "8-9 minutes", image: "eimage4.jpg" }
+        // Add more store data as needed
+    ];
+
+    // Data for popular stores
+    const popularStores = [
+        { name: "Towel land", category: "Beach Towels", rating: 5, deliveryTime: "10-11 minutes", image: "eimage5.jpg" },
+        { name: "Towel Heaven", category: "Beach Towels", rating: 4, deliveryTime: "12-13 minutes", image: "eimage6.jpg" },
+        { name: "Kim's slides", category: "Flip-Flops", rating: 4, deliveryTime: "8-9 minutes", image: "eimage7.jpg" },
+        { name: "Flip and flops", category: "Flip-Flops", rating: 4, deliveryTime: "8-9 minutes", image: "eimage8.jpg" }
+        // Add more popular store data as needed
+    ];
+
+    // Data for top rated stores
+    const topRatedStores = [
+        { name: "Mark's Sunnies", category: "Sunglasses", rating: 5, deliveryTime: "10-11 minutes", image: "eimage9.jpg" },
+        { name: "Hats Protect", category: "Hats", rating: 4, deliveryTime: "12-13 minutes", image: "eimage10.jpg" },
+        { name: "Dashing Swimsuits", category: "Swimwear", rating: 5, deliveryTime: "8-9 minutes", image: "eimage11.jpg" },
+        { name: "Snorkeling heaven", category: "Snorkeling Gear", rating: 5, deliveryTime: "8-9 minutes", image: "eimage12.jpg" },
+        { name: "Fat Umbrella", category: "Umbrellas", rating: 5, deliveryTime: "8-9 minutes", image: "eimage13.jpg" },
+        { name: "Swimsuits Galore", category: "Swimwear", rating: 5, deliveryTime: "8-9 minutes", image: "eimage14.jpg" },
+        { name: "Toy Chest", category: "Toys", rating: 5, deliveryTime: "8-9 minutes", image: "eimage15.jpg" },
+        { name: "Sunscreenbox", category: "Sunscreen", rating: 5, deliveryTime: "8-9 minutes", image: "eimage16.jpg" }
+        // Add more top rated store data as needed
+    ];
+
+
+        // Function to generate HTML for each store
+        function generateStoreHTML(store) {
+            return `
+                <div class="store">
+            <img src="${store.image}" alt="${store.name}">
+            <div class="store-details">
+                <div class="store-name">${store.name}</div>
+                <div class="store-category">${store.category}</div> <!-- Add store category -->
+                <div class="store-ratings">
+                    ${"&#9733;".repeat(store.rating)}${"&#9734;".repeat(5 - store.rating)}
+                </div>
+                <div class="store-distance">${store.deliveryTime}</div>
+            </div>
+        </div>
+            `;
+        }
+
+
+// Function to filter store data by category
+function filterStoresByCategory(category) {
+    console.log('Selected category:', category); // Log the selected category
+
+    const allStores = [...stores, ...popularStores, ...topRatedStores]; // Combine data from all categories
+
+    const filteredStores = allStores.filter(store => store.category === category);
+    console.log('Filtered stores:', filteredStores); // Log the filtered stores
+    
+    return filteredStores;
+}
+
+
+
+
+// Update the event listener to handle filtering and displaying the filtered results
+document.querySelectorAll('.horizontal-menu ul li a').forEach(item => {
+    item.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        
+        // Get the text content of the clicked item
+        const category = this.textContent.trim(); // Trim any leading or trailing whitespace
+        
+        // Log the category to console for debugging
+        console.log('Clicked category:', category);
+
+        // Filter store data by category
+        const filteredStores = filterStoresByCategory(category);
+        
+        // Render filtered stores in the filtered-results section
+        renderFilteredStores(filteredStores);
+        
+        // Hide all other sections except the filtered results section
+        document.querySelectorAll('.stores-section').forEach(section => {
+            if (section.classList.contains('filtered-results')) {
+                section.style.display = 'block'; // Display the filtered results section
+            } else {
+                section.style.display = 'none'; // Hide other sections
+            }
+        });
+    });
+});
+
+// Function to render filtered stores
+function renderFilteredStores(storeData) {
+    const filteredStoreImages = document.getElementById('filteredStoreImages');
+    if (filteredStoreImages) {
+        filteredStoreImages.innerHTML = storeData.map(store => generateStoreHTML(store)).join('');
+    }
+}
+
+
+
+
+// Function to render stores on the page
+function renderStores(storeData, containerId) {
+    console.log('Rendering stores for container:', containerId); // Log the container ID
+    console.log('Store data to render:', storeData); // Log the store data
+
+    const storeImages = document.getElementById(containerId.toLowerCase()); // Change to lowercase
+    console.log('Found container element:', storeImages); // Log the container element
+
+    // Ensure the container element exists before updating its content
+    if (storeImages) {
+        storeImages.innerHTML = storeData.map(store => generateStoreHTML(store)).join('');
+        console.log('Updated container HTML:', storeImages.innerHTML); // Log the updated HTML
+
+
+              // Add a class to the filtered images
+              storeImages.querySelectorAll('.store').forEach(store => {
+            if (storeData.some(filteredStore => filteredStore.name === store.dataset.name)) {
+                store.classList.add('filtered');
+            }
+        });
+        
+        
+
+
+        // Log message indicating filtered stores have been placed on the screen
+        console.log('Filtered stores have been placed on the screen.');
+    } else {
+        console.log('Container element not found:', containerId);
+    }
+}
+
+
+
+        // Call renderStores to display nearby stores when the page loads
+        renderStores(stores, "storeImages");
+        // Call renderStores to display popular stores when the page loads
+        renderStores(popularStores, "popularStoreImages");
+        // Call renderStores to display top rated stores when the page loads
+        renderStores(topRatedStores, "topRatedStoreImages");
+    </script>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    </script>
+
+
+
+<footer>
+    <div>
+        <h3>Discover Beach Basket</h3>
+        <ul>
+         
+            <li><a href="#">About us</a></li>
+            
+        </ul>
+    </div>
+    <div>
+        <h3>Newsroom</h3>
+        <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookies</a></li>
+        </ul>
+    </div>
+    <div>
+        <h3>Careers</h3>
+        <ul>
+            <li><a href="#">Restaurant signup</a></li>
+            <li><a href="#">Become a rider</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Terms and conditions</a></li>
+
+            
+        </ul>
+    </div>
+</footer>
+
+<script>
+function searchStores() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const visibleStores = document.querySelectorAll('.stores-section:not(.filtered-results) .store');
+    const filteredStoreImages = document.getElementById('filteredStoreImages');
+
+    // Hide other sections
+    document.querySelector('.nearby-stores').style.display = 'none';
+    document.querySelector('.popular-stores').style.display = 'none';
+    document.querySelector('.top-rated-stores').style.display = 'none';
+
+    // Show the filtered results section
+    document.querySelector('.filtered-results').style.display = 'block';
+
+    // Clear previous search results
+    filteredStoreImages.innerHTML = '';
+
+    visibleStores.forEach(store => {
+        const storeName = store.querySelector('.store-name').innerText.toLowerCase();
+        const storeCategory = store.querySelector('.store-category').innerText.toLowerCase();
+
+        if (storeName.includes(input) || storeCategory.includes(input)) {
+            filteredStoreImages.appendChild(store.cloneNode(true));
+        }
+    });
+}
+
+
+
+
+
+
+
+
+
+    // Call searchStores function whenever there is a change in the search input
+    document.getElementById('searchInput').addEventListener('input', searchStores);
+</script>
+
+</body>
+</html>

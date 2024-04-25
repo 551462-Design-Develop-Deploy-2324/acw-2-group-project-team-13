@@ -1,0 +1,96 @@
+﻿@page "/customerhome/{customerId:int}"
+@rendermode InteractiveServer
+@using Db
+
+<head>
+    <PageTitle>CustomerHome</PageTitle>
+    <link rel="stylesheet" href="CustomerHome.css" />
+    <link rel="icon" href="icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="top-section">
+        <div class="logo">BEACH BASKET</div>
+
+        <div class="icons">
+            <span class="fas fa-user" onclick="viewAccount()"></span>
+            <span class="heart-icon">&#x2661;</span>
+            <span class='fas fa-shopping-basket' style='font-size:28px'></span>
+        </div>
+    </div>
+
+    <div class="top-images-container">
+        <div class="image">
+            <a href="food.html"><img src="Images\image1.jpg" alt="Food"></a>
+            <div class="image-description">Food</div>
+        </div>
+        <div class="image">
+            <a href="essentials.html"><img src="Images\image2.jpeg" alt="Beach Essentials"></a>
+            <div class="image-description">Beach Essentials</div>
+        </div>
+    </div>
+
+    <div class="beach-basket-must-shops">
+        <h2>Beach Basket Must Shops</h2>
+        <div class="store-container" id="must-shops-container">
+            <!-- Must shops will be dynamically added here -->
+        </div>
+    </div>
+
+    <div class="popular-stores">
+        <h2>Popular Stores Near You</h2>
+        <div class="store-container" id="popular-stores-container">
+            <!-- Popular stores will be dynamically added here -->
+        </div>
+    </div>
+</body>
+
+
+<footer>
+    <div>
+        <h3>Discover Beach Basket</h3>
+        <ul>
+
+            <li><a href="#">About us</a></li>
+
+        </ul>
+    </div>
+    <div>
+        <h3>Newsroom</h3>
+        <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookies</a></li>
+        </ul>
+    </div>
+    <div>
+        <h3>Careers</h3>
+        <ul>
+            <li><a href="#">Restaurant signup</a></li>
+            <li><a href="#">Become a rider</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Terms and conditions</a></li>
+
+
+        </ul>
+    </div>
+</footer>
+
+
+
+
+@code{
+    [Parameter]
+    public int customerId { get; set; }
+
+    Customer customer;
+    Database database = new Database();
+    protected override void OnInitialized()
+    {
+        database.ImportData();
+        database.AssingData();
+        customer = database.Customers.FirstOrDefault(o => o.CustomerId == customerId);
+    }
+}

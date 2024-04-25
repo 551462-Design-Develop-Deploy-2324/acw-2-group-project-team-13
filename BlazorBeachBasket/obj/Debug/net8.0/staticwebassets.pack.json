@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\BlazorBeachBasket.bundle.scp.css"
     },
     {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\CustomerHome.css",
+      "PackagePath": "staticwebassets\\CustomerHome.css"
+    },
+    {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Forgot.css",
       "PackagePath": "staticwebassets\\Forgot.css"
     },
@@ -97,8 +101,108 @@
       "PackagePath": "staticwebassets\\Images\\Login_google_logo_2.png"
     },
     {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\Sporty swimsuits.avif",
+      "PackagePath": "staticwebassets\\Images\\Sporty swimsuits.avif"
+    },
+    {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\bblogo.jpg",
       "PackagePath": "staticwebassets\\Images\\bblogo.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\beach.png",
+      "PackagePath": "staticwebassets\\Images\\beach.png"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\eimage1.jpg",
+      "PackagePath": "staticwebassets\\Images\\eimage1.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\eimage10.jpg",
+      "PackagePath": "staticwebassets\\Images\\eimage10.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\eimage11.jpg",
+      "PackagePath": "staticwebassets\\Images\\eimage11.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\eimage12.jpg",
+      "PackagePath": "staticwebassets\\Images\\eimage12.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\eimage13.jpg",
+      "PackagePath": "staticwebassets\\Images\\eimage13.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\eimage14.jpg",
+      "PackagePath": "staticwebassets\\Images\\eimage14.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\eimage15.jpg",
+      "PackagePath": "staticwebassets\\Images\\eimage15.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\eimage16.jpg",
+      "PackagePath": "staticwebassets\\Images\\eimage16.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\eimage2.jpg",
+      "PackagePath": "staticwebassets\\Images\\eimage2.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\eimage3.jpg",
+      "PackagePath": "staticwebassets\\Images\\eimage3.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\eimage4.jpg",
+      "PackagePath": "staticwebassets\\Images\\eimage4.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\eimage5.jpg",
+      "PackagePath": "staticwebassets\\Images\\eimage5.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\eimage6.jpg",
+      "PackagePath": "staticwebassets\\Images\\eimage6.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\eimage7.jpg",
+      "PackagePath": "staticwebassets\\Images\\eimage7.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\eimage8.jpg",
+      "PackagePath": "staticwebassets\\Images\\eimage8.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\eimage9.jpg",
+      "PackagePath": "staticwebassets\\Images\\eimage9.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\icon.png",
+      "PackagePath": "staticwebassets\\Images\\icon.png"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\image1.jpg",
+      "PackagePath": "staticwebassets\\Images\\image1.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\image2.jpeg",
+      "PackagePath": "staticwebassets\\Images\\image2.jpeg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\image3.jpg",
+      "PackagePath": "staticwebassets\\Images\\image3.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\image4.jpg",
+      "PackagePath": "staticwebassets\\Images\\image4.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\image5.jpg",
+      "PackagePath": "staticwebassets\\Images\\image5.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\image6.jpg",
+      "PackagePath": "staticwebassets\\Images\\image6.jpg"
     },
     {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\item_Bacon_Burger.jpg",
@@ -181,6 +285,118 @@
       "PackagePath": "staticwebassets\\Images\\palm.png"
     },
     {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\slide1.jpg",
+      "PackagePath": "staticwebassets\\Images\\slide1.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\slide2.jpg",
+      "PackagePath": "staticwebassets\\Images\\slide2.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\slide3.jpg",
+      "PackagePath": "staticwebassets\\Images\\slide3.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\store 3.jpg",
+      "PackagePath": "staticwebassets\\Images\\store 3.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\store1.jpg",
+      "PackagePath": "staticwebassets\\Images\\store1.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\store10.jpg",
+      "PackagePath": "staticwebassets\\Images\\store10.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\store11.jpg",
+      "PackagePath": "staticwebassets\\Images\\store11.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\store12.jpg",
+      "PackagePath": "staticwebassets\\Images\\store12.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\store13.jpg",
+      "PackagePath": "staticwebassets\\Images\\store13.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\store14.jpg",
+      "PackagePath": "staticwebassets\\Images\\store14.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\store15.jpg",
+      "PackagePath": "staticwebassets\\Images\\store15.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\store16.jpg",
+      "PackagePath": "staticwebassets\\Images\\store16.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\store17.jpg",
+      "PackagePath": "staticwebassets\\Images\\store17.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\store2.jpg",
+      "PackagePath": "staticwebassets\\Images\\store2.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\store3.jpg",
+      "PackagePath": "staticwebassets\\Images\\store3.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\store4.jpg",
+      "PackagePath": "staticwebassets\\Images\\store4.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\store5.avif",
+      "PackagePath": "staticwebassets\\Images\\store5.avif"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\store5.jpg",
+      "PackagePath": "staticwebassets\\Images\\store5.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\store6.jpg",
+      "PackagePath": "staticwebassets\\Images\\store6.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\store7.jpg",
+      "PackagePath": "staticwebassets\\Images\\store7.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\store7.webp",
+      "PackagePath": "staticwebassets\\Images\\store7.webp"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\store8.jpg",
+      "PackagePath": "staticwebassets\\Images\\store8.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\store9.jpg",
+      "PackagePath": "staticwebassets\\Images\\store9.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\store9.webp",
+      "PackagePath": "staticwebassets\\Images\\store9.webp"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\sunglasses.jpg",
+      "PackagePath": "staticwebassets\\Images\\sunglasses.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\swimsuit.jpg",
+      "PackagePath": "staticwebassets\\Images\\swimsuit.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\testslide.jpg",
+      "PackagePath": "staticwebassets\\Images\\testslide.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\toys.webp",
+      "PackagePath": "staticwebassets\\Images\\toys.webp"
+    },
+    {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Login.css",
       "PackagePath": "staticwebassets\\Login.css"
     },
@@ -197,8 +413,8 @@
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\favicon.png",
-      "PackagePath": "staticwebassets\\favicon.png"
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\food.html.txt",
+      "PackagePath": "staticwebassets\\food.html.txt"
     },
     {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\newaccount.css",

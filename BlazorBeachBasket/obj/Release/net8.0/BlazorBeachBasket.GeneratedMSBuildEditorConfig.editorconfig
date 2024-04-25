@@ -22,12 +22,12 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[M:/Code/acw-2-group-project-team-13/BlazorBeachBasket/Components/Pages/Forgot.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGb3Jnb3QucmF6b3I=
+[M:/Code/acw-2-group-project-team-13/BlazorBeachBasket/Components/Pages/CustomerHome.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDdXN0b21lckhvbWUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[M:/Code/acw-2-group-project-team-13/BlazorBeachBasket/Components/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+[M:/Code/acw-2-group-project-team-13/BlazorBeachBasket/Components/Pages/Forgot.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGb3Jnb3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [M:/Code/acw-2-group-project-team-13/BlazorBeachBasket/Components/Pages/Iisstart.razor]
@@ -48,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [M:/Code/acw-2-group-project-team-13/BlazorBeachBasket/Components/Pages/Orders.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPcmRlcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[M:/Code/acw-2-group-project-team-13/BlazorBeachBasket/Components/Pages/RestaurantHome.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXN0YXVyYW50SG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [M:/Code/acw-2-group-project-team-13/BlazorBeachBasket/Components/Routes.razor]

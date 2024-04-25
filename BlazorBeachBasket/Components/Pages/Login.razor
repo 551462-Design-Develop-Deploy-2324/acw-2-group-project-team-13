@@ -106,6 +106,8 @@
                 {
                     //Customer
                     Customer customer = database.Customers.FirstOrDefault(o => o.Customer_UserId == user.UserId);
+                    string newUrl = $"/customerhome/{customer.CustomerId.ToString()}";
+                    nav.NavigateTo(newUrl);
                 }
                 else if(user.UserType == 2)
                 {

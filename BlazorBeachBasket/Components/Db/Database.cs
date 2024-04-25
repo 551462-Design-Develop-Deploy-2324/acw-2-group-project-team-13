@@ -142,7 +142,7 @@ namespace BlazorBeachBasket.Components.Db
             reader.Close();
 
             //Read Images
-            sql = "SELECT * FROM ImgLinks";
+            sql = "SELECT * FROM Images";
             command = new SQLiteCommand(sql, connection);
             reader = command.ExecuteReader();
 
@@ -150,7 +150,7 @@ namespace BlazorBeachBasket.Components.Db
             {
                 while (reader.Read())
                 {
-                    Image image = new Image(int.Parse(reader[0].ToString()), reader[1].ToString(), int.Parse(reader[2].ToString()));
+                    Image image = new Image(int.Parse(reader[0].ToString()), reader[1].ToString(), int.Parse(reader[2].ToString()), int.Parse(reader[3].ToString()));
                     Images.Add(image);
                 }
             }
@@ -177,6 +177,13 @@ namespace BlazorBeachBasket.Components.Db
                         restaurant.Rest_Orders.Add(order);
                     }
                 }
+                foreach(Image img in Images)
+                {
+                    if(img.Img_ItemType == 0 && restaurant.RestaurantId == img.Img_ItemId)
+                    {
+                        restaurant.Restaurant_img_link = img.ImgLink;
+                    }
+                }
             }
 
             foreach(Order order in Orders)
@@ -191,7 +198,7 @@ namespace BlazorBeachBasket.Components.Db
 
             foreach (MenuItem menuItem in MenuItems)
             {
-                menuItem.Item_Image = Images.FirstOrDefault(o => o.Img_ItemId == menuItem.ItemId);
+                menuItem.Item_Image = Images.FirstOrDefault(o => o.Img_ItemId == menuItem.ItemId && o.Img_ItemType == 1);
             }
         }
         public void ExportData()
@@ -280,12 +287,12 @@ namespace BlazorBeachBasket.Components.Db
             }
 
             //Write Images
-            sql = "DELETE FROM ImgLinks";
+            sql = "DELETE FROM Images";
             cmd = new SQLiteCommand(sql, connection);
             cmd.ExecuteNonQuery();
             foreach (Image img in Images)
             {
-                sql = $"Insert into ImgLinks values ({img.ImgId},'{img.ImgLink}',{img.Img_ItemId})";
+                sql = $"Insert into ImgLinks values ({img.ImgId},'{img.ImgLink}',{img.Img_ItemType},{img.Img_ItemId})";
                 cmd = new SQLiteCommand(sql, connection);
                 cmd.ExecuteNonQuery();
             }
@@ -320,6 +327,7 @@ namespace BlazorBeachBasket.Components.Db
         public string RestaurantAddress { get; set; }
         public string RestaurantPhone { get; set; }
         public int Restaurant_UserId { get; set; }
+        public string Restaurant_img_link { get; set; }
         public List<MenuItem> Rest_Menu { get; set; }
         public List<Order> Rest_Orders { get; set; }
         public Restaurant(int restaurantId, string restaurantName, string restaurantAddress, string restaurantPhone, int restaurant_UserId, List<MenuItem> rest_Menu, List<Order> rest_Orders)
@@ -466,12 +474,14 @@ namespace BlazorBeachBasket.Components.Db
     {
         public int ImgId;
         public string ImgLink;
+        public int Img_ItemType;
         public int Img_ItemId;
 
-        public Image(int pImgId, string pImgLink, int pImg_ItemId)
+        public Image(int pImgId, string pImgLink,int pImg_ItemType, int pImg_ItemId)
         {
             ImgId = pImgId;
             ImgLink = pImgLink;
+            Img_ItemType = pImg_ItemType;
             Img_ItemId = pImg_ItemId;
         }
 

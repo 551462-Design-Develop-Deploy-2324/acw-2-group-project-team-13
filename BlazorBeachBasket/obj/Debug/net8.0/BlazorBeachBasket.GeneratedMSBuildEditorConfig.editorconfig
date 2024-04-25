@@ -22,6 +22,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[M:/Code/acw-2-group-project-team-13/BlazorBeachBasket/Components/Pages/CustomerHome.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDdXN0b21lckhvbWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [M:/Code/acw-2-group-project-team-13/BlazorBeachBasket/Components/Pages/Forgot.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGb3Jnb3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

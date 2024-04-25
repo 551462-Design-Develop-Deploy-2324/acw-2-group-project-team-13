@@ -1,0 +1,181 @@
+﻿body {
+    background-color: #F6F6F6;
+    font-family: Georgia;
+    margin: 0;
+    padding: 0;
+}
+
+.top-section {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: 2px solid #dee2e6;
+    margin-top: 50px;
+}
+
+    footer div {
+        flex: 1;
+        margin: 0 10px;
+    }
+
+    footer h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        footer ul li {
+            margin-bottom: 5px;
+        }
+
+            footer ul li a {
+                text-decoration: none;
+                font-size: 14px;
+                color: white;
+            }
+
+                footer ul li a:hover {
+                    color: #007bff;
+                }
+
+
+.search-bar {
+    width: 600px;
+    height: 28px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+    .icons span {
+        font-size: 28px;
+        margin-left: 10px;
+    }
+
+.top-images-container, .image-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin: 0 30px 20px;
+}
+
+.image {
+    width: 46%;
+    overflow: hidden;
+    margin-right: 30px;
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+    .image:hover {
+        transform: scale(1.1); /* Make the image 10% larger on hover */
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+        max-height: 170px;
+        object-fit: cover;
+        transition: transform 0.3s ease; /* Add transition for smooth effect */
+    }
+
+    .image:hover img {
+        transform: scale(1.1); /* Make the image 10% larger on hover */
+    }
+
+
+.image-description {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.popular-stores, .beach-basket-must-shops {
+    padding: 20px;
+}
+
+.store-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    justify-content: space-between; /* Distribute space between items */
+    margin-bottom: 20px;
+}
+
+.store {
+    width: 450px; /* Adjust width for three items in a row with spacing */
+    height: 200;
+    overflow: hidden;
+    margin-bottom: 20px; /* Add margin between items */
+}
+
+.store {
+    display: inline-block; /* Display the store elements inline */
+    margin-left: 35px; /* Add some spacing between stores */
+}
+
+    .store img {
+        width: 400px;
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.3s ease; /* Add transition for smooth effect */
+    }
+
+    .store:hover img {
+        transform: scale(1.1); /* Make the image 10% larger on hover */
+    }
+
+.store-details {
+    padding: 10px;
+}
+
+.store-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.store-ratings {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.rating-icon {
+    font-size: 16px;
+    color: gold;
+    margin-right: 5px;
+}
+
+.store-distance {
+    font-size: 14px;
+}
+
+.icons .heart-icon {
+    font-size: 45px; /* Adjust the font size as needed */
+}

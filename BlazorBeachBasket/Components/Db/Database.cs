@@ -289,6 +289,7 @@ namespace BlazorBeachBasket.Components.Db
                 cmd = new SQLiteCommand(sql, connection);
                 cmd.ExecuteNonQuery();
             }
+            connection.Close();
         }
     }
 

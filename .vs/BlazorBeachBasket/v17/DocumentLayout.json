@@ -3,27 +3,32 @@
   "WorkspaceRootPath": "M:\\Code\\acw-2-group-project-team-13\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\pages\\orders.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\pages\\orders.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-=======
->>>>>>> 7f75d64d2d46b2c3a69026584e863e7a9ca6cec6
+      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\pages\\newaccount.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\pages\\newaccount.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\pages\\menus.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\pages\\menus.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\pages\\restauranthome.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\pages\\restauranthome.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\db\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\db\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\wwwroot\\newaccount.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\wwwroot\\newaccount.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,25 +38,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 10,
           "Children": [
             {
-<<<<<<< HEAD
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Orders.razor",
-              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\Orders.razor",
-              "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Pages\\Orders.razor",
-              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\Orders.razor",
-              "RelativeToolTip": "BlazorBeachBasket\\Components\\Pages\\Orders.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAOAAAA",
+              "DocumentIndex": 3,
+              "Title": "RestaurantHome.razor",
+              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\RestaurantHome.razor",
+              "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Pages\\RestaurantHome.razor",
+              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\RestaurantHome.razor",
+              "RelativeToolTip": "BlazorBeachBasket\\Components\\Pages\\RestaurantHome.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-24T21:00:25.827Z",
+              "WhenOpened": "2024-04-25T10:45:50.789Z",
               "EditorCaption": ""
             },
             {
-=======
->>>>>>> 7f75d64d2d46b2c3a69026584e863e7a9ca6cec6
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "newaccount.css",
+              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\newaccount.css",
+              "RelativeDocumentMoniker": "BlazorBeachBasket\\wwwroot\\newaccount.css",
+              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\newaccount.css",
+              "RelativeToolTip": "BlazorBeachBasket\\wwwroot\\newaccount.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-25T10:10:06.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Database.cs",
+              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Db\\Database.cs",
+              "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Db\\Database.cs",
+              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Db\\Database.cs",
+              "RelativeToolTip": "BlazorBeachBasket\\Components\\Db\\Database.cs",
+              "ViewState": "AQIAAI4BAAAAAAAAAAAwwLUBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T10:08:34.816Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
@@ -69,75 +97,55 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 3,
-              "Title": "Home.razor",
-              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Pages\\Home.razor",
-              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\Home.razor",
-              "RelativeToolTip": "BlazorBeachBasket\\Components\\Pages\\Home.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-24T20:43:27.766Z",
-=======
-              "DocumentIndex": 0,
-              "Title": "Menus.razor",
-              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\Menus.razor",
-              "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Pages\\Menus.razor",
-              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\Menus.razor",
-              "RelativeToolTip": "BlazorBeachBasket\\Components\\Pages\\Menus.razor",
-              "ViewState": "AQIAAI4AAAAAAAAAAAAvwKgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-23T14:03:24.331Z",
->>>>>>> 7f75d64d2d46b2c3a69026584e863e7a9ca6cec6
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 2,
-=======
               "DocumentIndex": 1,
->>>>>>> 7f75d64d2d46b2c3a69026584e863e7a9ca6cec6
-              "Title": "Database.cs",
-              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Db\\Database.cs",
-              "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Db\\Database.cs",
-              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Db\\Database.cs",
-              "RelativeToolTip": "BlazorBeachBasket\\Components\\Db\\Database.cs",
-              "ViewState": "AQIAAHUBAAAAAAAAAAAiwMABAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< HEAD
-              "WhenOpened": "2024-04-24T20:40:50.455Z",
+              "Title": "NewAccount.razor",
+              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\NewAccount.razor",
+              "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Pages\\NewAccount.razor",
+              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\NewAccount.razor",
+              "RelativeToolTip": "BlazorBeachBasket\\Components\\Pages\\NewAccount.razor",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAE4AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-25T10:00:11.311Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "App.razor",
+              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\App.razor",
+              "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\App.razor",
+              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\App.razor",
+              "RelativeToolTip": "BlazorBeachBasket\\Components\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-25T00:20:12.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Login.razor",
               "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\Login.razor",
               "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Pages\\Login.razor",
               "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\Login.razor",
               "RelativeToolTip": "BlazorBeachBasket\\Components\\Pages\\Login.razor",
-              "ViewState": "AQIAABUAAAAAAAAAAAApwDIAAABPAAAA",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAGUAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-24T20:39:47.373Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Menus.razor",
               "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\Menus.razor",
               "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Pages\\Menus.razor",
               "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\Menus.razor",
               "RelativeToolTip": "BlazorBeachBasket\\Components\\Pages\\Menus.razor",
-              "ViewState": "AQIAADYAAAAAAAAAAAAAAEYAAAAAAAAA",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAEwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-24T20:39:46.752Z",
               "EditorCaption": ""
-=======
-              "WhenOpened": "2024-04-23T07:42:14.257Z"
->>>>>>> 7f75d64d2d46b2c3a69026584e863e7a9ca6cec6
             }
           ]
         }

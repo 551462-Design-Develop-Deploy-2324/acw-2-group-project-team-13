@@ -1,0 +1,53 @@
+﻿@page "/resthome/{RestId:int}"
+@rendermode InteractiveServer
+@using Db;
+@inject NavigationManager nav;
+
+<PageTitle>Home</PageTitle>
+
+
+<div class="home-container">
+
+    <div id="title">
+        <h1>
+            @restaurant.RestaurantName
+        </h1>
+    </div>
+
+
+    <button @onclick="@ToOrders_Main">Orders</button>
+    <p></p>
+    <button @onclick="@ToMenu_Main">Menu</button>
+    <p></p>
+    <p></p>
+    <button @onclick="@LogOut" style="background-color: darkred">Logout</button>
+</div>
+
+@code {
+    [Parameter]
+    public int RestId { get; set; }
+
+    Database database = new Database();
+    Restaurant restaurant;
+    protected override void OnInitialized()
+    {
+        database.ImportData();
+        database.AssingData();
+        restaurant = database.Restaurants.FirstOrDefault(o => o.RestaurantId == RestId);
+    }
+
+
+    void ToOrders_Main()
+    {
+        nav.NavigateTo($"/orders/{RestId}");
+    }
+    void ToMenu_Main()
+    {
+        nav.NavigateTo($"/menus/{RestId}");
+    }
+
+    void LogOut()
+    {
+        nav.NavigateTo("/Login");
+    }
+}

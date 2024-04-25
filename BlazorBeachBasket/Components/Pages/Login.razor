@@ -1,42 +1,93 @@
 ﻿@page "/login"
 @rendermode InteractiveServer
 @inject NavigationManager nav;
-@using Db
-
-<PageTitle>Login</PageTitle>
-
-<div class="login-container">
-    <form id="loginForm">
-
-        <h1>Login</h1>
+@using BlazorBeachBasket.Components.Db
 
 
-        <div class="input-group">
-            <label for="username"><strong>Username:</strong></label><br>
-            <input type="text" @bind-value=@Username id="username" required>
-        </div>
+<head>
+    <PageTitle>Login</PageTitle>
+    <link rel="stylesheet" href="Login.css" />
+</head>
 
-        <div class="input-group">
-            <label for="password"><strong>Password:</strong></label><br>
-            <input type="password" @bind-value=@Password id="password" required>
-        </div>
+<div id="container">
 
-        <button @onclick="@LoginAuth" type="button">Login</button>
 
-        <p></p>
+    <img src="Images\bblogo.jpg" alt="Login Image" style="width: 200px; height: auto;">
+    <h2>Enter Details</h2>
+    <form>
+        <input type="text" name="username" placeholder="Username" @bind-value="@Username" required><br>
+        <input type="password" name="password" placeholder="Password" @bind-value="@Password" required><br>
+        <input type="button" value="Login" @onclick="@LoginAuth">
+        <div class="check-text">                               
+            <input type="checkbox" checked="checked" name="remember";"> Remember me
+        </div>                                        
     </form>
+
+
+    <div id="myModal" class="@myModal">
+        <div class="modal-content">
+            <span class="close" @onclick="@closeModal">&times;</span>
+            <img src="Images\Login_google_logo_2.png" alt="Google Signin" style="width: 100px; height: auto;">
+            <h2>Sign In With Google</h2>
+            <p>Enter your email address and password:</p>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <button class="sign-in" onclick="@LoginAuthGmail">Sign In</button>
+        </div>
+    </div>
+
+
+
+    <div class="forgot-password">
+        <button class="forgot-password-button" type="button" @onclick="ToForgot" style="background: none;border: none;color: blue;text-decoration: underline;cursor: pointer;padding: 0;font-family: inherit;font-size: inherit;">
+            Forgot Password?
+        </button>
+    </div>
+
+    <div class="section-divider">
+        <div class="divider-line"></div>
+        <div class="or-text">Or</div>
+        <div class="divider-line"></div>
+    </div>
+
+    <img src="Images\Login_google_logo_1.png" alt="Google Signin" type="button" @onclick="@openModal" style="width: 60px; height: auto; cursor: pointer;">
+
+
+    <div style="margin-top: 50px;">
+        <button class="sign-in" type="button" @onclick="@ToNewAccount">Create an account</button><br>                  
+    </div>
+
 </div>
 
-
 @code {
+
     private string Username { get; set; }
     private string Password { get; set; }
-
+    private string modal_off = "modal";
+    private string modal_on = "modal_on";
+    private string myModal = "modal";
     Database database = new Database();
     protected override void OnInitialized()
     {
         database.ImportData();
         database.AssingData();
+    }
+
+    void ToForgot()
+    {
+        nav.NavigateTo("/forgot");
+    }
+    void ToNewAccount()
+    {
+        nav.NavigateTo("/newaccount");
+    }
+    void openModal()
+    {
+        myModal = modal_on;
+    }
+    void closeModal()
+    {
+        myModal = modal_off;
     }
 
     void LoginAuth()
@@ -48,7 +99,7 @@
                 if (user.UserType == 0)
                 {
                     Restaurant restaurant = database.Restaurants.FirstOrDefault(o => o.Restaurant_UserId == user.UserId);
-                    string newUrl = $"/home/{restaurant.RestaurantId.ToString()}";
+                    string newUrl = $"/resthome/{restaurant.RestaurantId.ToString()}";
                     nav.NavigateTo(newUrl);
                 }
                 else if(user.UserType == 1)
@@ -62,5 +113,9 @@
                 }
             }
         }
+    }
+    void LoginAuthGmail()
+    {
+
     }
 }

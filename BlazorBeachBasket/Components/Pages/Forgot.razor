@@ -1,0 +1,42 @@
+﻿@page "/forgot"
+@rendermode InteractiveServer
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="Forgot.css" />
+</head>
+<div class="container">
+    <h1>Forgot Password?</h1>
+
+    <div id="forgotPasswordForm" style="@formstyleEmail">
+        <form id="emailForm" >
+	    <p style ="color: #5c5c59;"><b>Enter your email</b></p>
+            <input type="email" id="email" name="email" required>
+            <button type="button" @onclick="@ToConfirmation">Enter</button>
+        </form>
+    </div>
+
+    <div id="confirmationMessage" style="@formstyleConfirm" >
+        <p>An email has been sent to your address.</p>
+        <p>Please enter the PIN you received:</p>
+        <form id="pinForm">
+            <input type="text" id="pin" name="pin" required>
+            <button type="submit">Submit PIN</button>
+        </form>
+    </div>
+</div>
+
+
+@code{
+    private string formstyle_off = "display: none";
+    private string formstyle_on = "display: block";
+    private string formstyleEmail;
+    private string formstyleConfirm = "display: none";
+
+    void ToConfirmation(){
+        formstyleEmail = formstyle_off;
+        formstyleConfirm = formstyle_on;
+    }
+}

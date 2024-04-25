@@ -1,0 +1,88 @@
+﻿@page "/newaccount"
+@rendermode InteractiveServer
+@using Db
+
+<link rel="stylesheet" href="newaccount.css" />
+<PageTitle>NewAccount</PageTitle>
+
+
+<div class="container">
+    <h1>New Account</h1>
+
+    <div id="CreateNewAccount">
+        <form id="usernameForm">
+            <p style="color: #5c5c59; font-size: 20px;"><b>Enter your details</b></p>
+            <p style="@InvalidUsernameStyle">Username already exists!</p>
+            <p style="@InvalidPasswordStyle">Password too weak (8 characters minimum)</p>
+            <input type="username" id="username" name="username" placeholder="Username" @bind-value="@Username" required>
+            <input type="password" id="password" name="password" placeholder="Password" @bind-value="@Password" required>
+            <!-- <label for="date">Enter your birth date:</label><br> -->
+            <p style="color: #5c5c59;">Enter your birthdate</p>
+
+            <button type="button" @onclick="@CheckValidity">Enter</button>
+        </form>
+    </div>
+</div>
+
+
+@code {
+    Database database = new Database();
+    private string Username;
+    private string Password;
+    private string InvalidUsernameStyle = "color: red; fontsize_12px; display: none";
+    private string InvalidUsernameStyle_on = "color: red; fontsize_12px;";
+    private string InvalidUsernameStyle_off = "color: red; fontsize_12px; display: none";
+    private string InvalidPasswordStyle = "color: red; fontsize_12px; display: none";
+    private string InvalidPasswordStyle_on = "color: red; fontsize_12px;";
+    private string InvalidPasswordStyle_off = "color: red; fontsize_12px; display: none";
+
+    protected override void OnInitialized()
+    {
+        database.ImportData();
+        database.AssingData();
+    }
+
+    void CheckValidity()
+    {
+        bool validUsername = false;
+        bool validPassword = false;
+        List<string> usernamesDB = new List<string>();
+        foreach(User user in database.Users)
+        {
+            usernamesDB.Add(user.Username);
+        }
+
+
+
+        if (!usernamesDB.Contains(Username))
+        {
+            InvalidUsernameStyle = InvalidUsernameStyle_off;
+            validUsername = true;
+        }
+        else
+        {
+            InvalidUsernameStyle = InvalidUsernameStyle_on;
+        }
+
+        if (Password.Length >= 8)
+        {
+            InvalidPasswordStyle = InvalidPasswordStyle_off;
+            validPassword = true;
+        }
+        else
+        {
+            InvalidPasswordStyle = InvalidPasswordStyle_on;
+        }
+
+        if(validUsername && validPassword)
+        {
+            CreateAccount();
+        }
+    }
+
+    void CreateAccount()
+    {
+        User newUser = new User(database.Users.Last().UserId+1, 1, Username, Password);
+        database.Users.Add(newUser);
+    }
+}

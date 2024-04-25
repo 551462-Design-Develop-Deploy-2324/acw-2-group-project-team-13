@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head >
@@ -659,3 +660,430 @@ store-ratings">
 ```
 
 >>>>>>> 7f75d64d2d46b2c3a69026584e863e7a9ca6cec6
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach Basket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: #F6F6F6;
+            font-family: Georgia;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-section {
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 30px;
+        }
+
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: 2px solid #dee2e6;
+    margin-top: 50px; 
+}
+
+footer div {
+    flex: 1;
+    margin: 0 10px;
+}
+
+footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+
+footer ul li a:hover {
+    color: #007bff;
+}
+
+
+        .search-bar {
+            width: 600px;
+            height: 28px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            margin: 0 auto;
+        }
+
+        .icons {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .icons span {
+            font-size: 28px;
+            margin-left: 10px;
+        }
+
+        .top-images-container, .image-container {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            margin: 0 30px 20px;
+        }
+
+        .image {
+            width: 46%;
+            overflow: hidden;
+            margin-right: 30px;
+            transition: transform 0.3s ease; /* Add transition for smooth effect */
+        }
+        .image:hover  {
+            transform: scale(1.1); /* Make the image 10% larger on hover */
+        }
+        .image img {
+            width: 100%;
+            height: auto;
+            max-height: 170px;
+            object-fit: cover;
+            transition: transform 0.3s ease; /* Add transition for smooth effect */
+        }
+
+        .image:hover img {
+            transform: scale(1.1); /* Make the image 10% larger on hover */
+        }
+        
+
+        .image-description {
+            font-weight: bold;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .popular-stores, .beach-basket-must-shops {
+            padding: 20px;
+        }
+
+        .store-container {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+        justify-content: space-between; /* Distribute space between items */
+        margin-bottom: 20px;
+    }
+
+    .store {
+        width:450px; /* Adjust width for three items in a row with spacing */
+        height:200;
+        overflow: hidden;
+        margin-bottom: 20px; /* Add margin between items */
+    }
+    .store {
+    display: inline-block; /* Display the store elements inline */
+    margin-left: 35px; /* Add some spacing between stores */
+}
+
+    .store img {
+        width: 400px;
+      
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.3s ease; /* Add transition for smooth effect */
+    }
+    .store:hover img {
+            transform: scale(1.1); /* Make the image 10% larger on hover */
+        }
+        
+        .store-details {
+            padding: 10px;
+        }
+
+        .store-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .store-ratings {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .rating-icon {
+            font-size: 16px;
+            color: gold;
+            margin-right: 5px;
+        }
+
+        .store-distance {
+            font-size: 14px;
+        }
+
+        .icons .heart-icon {
+    font-size: 45px; /* Adjust the font size as needed */
+}
+
+    </style>
+</head>
+<body>
+    <div class="top-section">
+        <div class="logo">BEACH BASKET</div>
+       
+        <div class="icons">
+            <span class="fas fa-user" onclick="viewAccount()"></span> 
+            <span class="heart-icon">&#x2661;</span>
+            <span class='fas fa-shopping-basket' style='font-size:28px'></span>
+        </div>
+    </div>
+
+    <div class="top-images-container">
+        <div class="image">
+            <a href="food.html"><img src="image1.jpg" alt="Food"></a>
+            <div class="image-description">Food</div>
+        </div>
+        <div class="image">
+            <a href="essentials.html"><img src="image2.jpeg" alt="Beach Essentials"></a>
+            <div class="image-description">Beach Essentials</div>
+        </div>
+    </div>
+
+    <div class="beach-basket-must-shops">
+        <h2>Beach Basket Must Shops</h2>
+        <div class="store-container" id="must-shops-container">
+            <!-- Must shops will be dynamically added here -->
+        </div>
+    </div>
+    
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <!-- Your head content remains unchanged -->
+    </head>
+    <body>
+        <!-- Your top-section and top-images-container sections remain unchanged -->
+    
+        <div class="popular-stores">
+            <h2>Popular Stores Near You</h2>
+            <div class="store-container" id="popular-stores-container">
+                <!-- Popular stores will be dynamically added here -->
+            </div>
+        </div>
+    
+        <script>
+            // Store data in an array of objects for easy management
+            const storesData = [
+                {
+                    name: "Makeup Paradise",
+                    rating: 4,
+                    distance: "9 minutes away",
+                    image: "store15.jpg"
+                },
+                {
+                    name: "Fashion Hub",
+                    rating: 5,
+                    distance: "10 minutes away",
+                    image: "store2.jpg"
+                },
+                {
+                    name: "Fashion Hub",
+                    rating: 5,
+                    distance: "10 minutes away",
+                    image: "eimage1.jpg"
+                },
+                {
+                    name: "Fashion Hub",
+                    rating: 5,
+                    distance: "10 minutes away",
+                    image: "store6.jpg"
+                },
+                {
+                    name: "Fashion Hub",
+                    rating: 5,
+                    distance: "10 minutes away",
+                    image: "eimage3.jpg"
+                },
+                {
+                    name: "Fashion Hub",
+                    rating: 5,
+                    distance: "10 minutes away",
+                    image: "store12.jpg"
+                },
+                {
+                    name: "Fashion Hub",
+                    rating: 5,
+                    distance: "10 minutes away",
+                    image: "store13.jpg"
+                },
+                {
+                    name: "Fashion Hub",
+                    rating: 5,
+                    distance: "10 minutes away",
+                    image: "store9.jpg"
+                },
+                {
+                    name: "Tech Haven",
+                    rating: 3,
+                    distance: "11 minutes away",
+                    image: "store4.jpg"
+                },
+                // Add more stores as needed
+            ];
+    
+            // Function to generate HTML for a single store
+            function generateStoreHTML(store) {
+                return `
+                    <div class="store">
+                        <img src="${store.image}" alt="${store.name}">
+                        <div class="store-details">
+                            <div class="store-name">${store.name}</div>
+                            <div class="store-ratings">
+                                ${'&#9733;'.repeat(store.rating)}
+                                ${'&#9734;'.repeat(5 - store.rating)}
+                            </div>
+                            <div class="store-distance">${store.distance}</div>
+                        </div>
+                    </div>
+                `;
+            }
+    
+            // Function to render all stores
+            function renderStores() {
+                const container = document.getElementById('popular-stores-container');
+                let storesHTML = '';
+                let currentRow = '<div class="store-row">';
+                storesData.forEach((store, index) => {
+                    currentRow += generateStoreHTML(store);
+                    // Start a new row after every 3 stores or at the end of the stores array
+                    if ((index + 1) % 3 === 0 || index === storesData.length - 1) {
+                        currentRow += '</div>';
+                        storesHTML += currentRow;
+                        currentRow = '<div class="store-row">';
+                    }
+                });
+                container.innerHTML = storesHTML;
+            }
+    
+            // Call the renderStores function to populate the stores
+            renderStores();
+        </script>
+
+<script>
+    // Place the searchStores() function here
+    function searchStores() {
+        const searchTerm = document.getElementById('searchInput').value.trim();
+        if (searchTerm !== '') {
+            // Redirect to the essentials page with the search term as a URL parameter
+            window.location.href = `essentials.html?search=${encodeURIComponent(searchTerm)}`;
+        }
+    }
+</script>
+
+<footer>
+    <div>
+        <h3>Discover Beach Basket</h3>
+        <ul>
+         
+            <li><a href="#">About us</a></li>
+            
+        </ul>
+    </div>
+    <div>
+        <h3>Newsroom</h3>
+        <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookies</a></li>
+        </ul>
+    </div>
+    <div>
+        <h3>Careers</h3>
+        <ul>
+            <li><a href="#">Restaurant signup</a></li>
+            <li><a href="#">Become a rider</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Terms and conditions</a></li>
+
+            
+        </ul>
+    </div>
+</footer>
+<script>
+    // Store data for Beach Basket Must Shops in an array of objects
+    const mustShopsData = [
+        {
+            name: "Drinks R Us",
+            image: "image3.jpg"
+        },
+        {
+            name: "Toy Emporium",
+            image: "image4.jpg"
+        },
+        {
+            name: "Towel Haven",
+            image: "image6.jpg"
+        }
+      
+    ];
+
+    // Function to generate HTML for a single must shop
+    function generateMustShopHTML(shop) {
+        return `
+            <div class="store">
+                <img src="${shop.image}" alt="${shop.name}">
+                <div class="store-details">
+                    <div class="store-name">${shop.name}</div>
+                </div>
+            </div>
+        `;
+    }
+
+    // Function to render all must shops
+    function renderMustShops() {
+        const container = document.getElementById('must-shops-container');
+        let mustShopsHTML = '<div class="store-row">';
+        mustShopsData.forEach(shop => {
+            mustShopsHTML += generateMustShopHTML(shop);
+        });
+        mustShopsHTML += '</div>';
+        container.innerHTML = mustShopsHTML;
+    }
+
+    // Call the renderMustShops function to populate the must shops
+    renderMustShops();
+</script>
+
+
+
+    </body>
+    </html>
+    
+</body>
+</html>
+>>>>>>> 35572ffc35aed6424fcd1c88c256b8e36b9049a4

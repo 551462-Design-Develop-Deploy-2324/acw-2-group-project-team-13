@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Checkout</title>
+    <!--map using leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+
+<style>
+	body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #787474;
+    font-size: 14px;
+    text-align: center;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333331;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin : 30px 0 0 0;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0f0f0f;
+}
+
+
+/*configuring so that images willbe next to eachother for payment methods*/
+.column {
+  float: left;
+  width: 21%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.selected {
+            border: 3px solid #18181a;
+        }
+
+
+/* Custom styles for the popup */
+.popup {
+    padding: 10px;
+    background-color: #333331;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Style for the marker icon (optional) */
+.marker {
+    width: 200px;
+    height: 70px;
+    background-color: #6e6e6a;
+    border-radius: 20px;
+    box-shadow: 2px 2px;
+}
+
+</style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Checkout</h1>
+
+        <form id="checkoutForm">
+            <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            </div>
+            <div class="form-group">
+                <textarea id="address" name="address" rows="3" placeholder="Address" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <!-- Map container -->
+                <div id="map" style="height: 200px;"></div>
+                <!-- Initialize the map with Leaflet -->
+                <script>
+                    var map = L.map('map').setView([53.741291249875374, -0.34677818741075245], 15); 
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+                   /* // Add a marker with popup to the map
+                    var marker = L.marker([53.737097096577685, -0.3369985133555285]).addTo(map);
+                   
+                    var popupContent = "<b>You</b><br>Kingston Upon Hull.";
+
+                    // Bind popup to marker and configure to open on click
+                    marker.bindPopup(popupContent, { closeButton: false });
+
+                    // Handle marker click event to open popup
+                    marker.on('click', function() {
+                        marker.openPopup();
+                    });*/
+
+                    
+                    
+                    var marker = L.marker([53.741291249875374, -0.34677818741075245], {
+                    icon: L.divIcon({ className: 'marker' }) // Custom marker icon (optional)
+                    }).addTo(map);
+
+                    // Define popup content with custom HTML
+                    var popupContent = "<div class='popup'><b>You</b><br>Kingston Upon Hull.</div>";
+
+                    // Bind popup to marker and configure to open on click
+                    marker.bindPopup(popupContent, { closeButton: false });
+
+                    // Handle marker click event to open popup
+                    marker.on('click', function() {
+                        marker.openPopup();
+                    });
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    // Define coordinates for a polygon
+                   
+                   /* var polygonCoords = [
+                        [51.509, -0.08],
+                        [51.503, -0.06],
+                        [51.51, -0.047]
+                    ];
+
+                    // Add a polygon layer to the map with custom style
+                    var polygon = L.polygon(polygonCoords, { color: 'red', fillColor: '#f03', fillOpacity: 0.5 }).addTo(map);*/
+
+                </script>
+            </div>
+            <div class="form-group">
+                <label for="paymentMethod">Payment Method</label>
+
+                <div class="row">
+                    <div class="column">
+                      <img src="C:\Users\747026\OneDrive - hull.ac.uk\ddd\ddd\klarna.png" alt="Snow" style="width:100%" onclick="toggleBorder(this)">
+                    </div>
+                    <div class="column">
+                      <img src="C:\Users\747026\OneDrive - hull.ac.uk\ddd\ddd\visa.png" alt="Forest" style="width:100%" onclick="toggleBorder(this)">
+                    </div>
+                    <div class="column">
+                      <img src="C:\Users\747026\OneDrive - hull.ac.uk\ddd\ddd\mastercard.png" alt="Mountains" style="width:100%" onclick="toggleBorder(this)">
+                    </div>
+                    <div class="column">
+                        <img src="C:\Users\747026\OneDrive - hull.ac.uk\ddd\ddd\apay.png" alt="Snow" style="width:100%" onclick="toggleBorder(this)">
+                      </div>
+                  </div>
+            </div>
+
+    <button type="submit">Place Order</button>
+        </form>
+    </div>
+    <script>
+        function toggleBorder(image) {
+            image.classList.toggle('selected');
+        }
+
+    </script>
+</body>
+</html>
+
+

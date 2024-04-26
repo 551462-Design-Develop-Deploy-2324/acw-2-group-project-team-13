@@ -1,4 +1,5 @@
 ﻿@page "/customerhome/{customerId:int}"
+@inject NavigationManager nav
 @using Db
 
 <head>
@@ -21,7 +22,7 @@
 
     <div class="top-images-container">
         <div class="image">
-            <a href="food.html"><img src="Images\image1.jpg" alt="Food"></a>
+            <a href="@foodHTMLlink"><img src="Images\image1.jpg" alt="Food"></a>
             <div class="image-description">Food</div>
         </div>
         <div class="image">
@@ -89,8 +90,9 @@
 
     Customer customer;
     Restaurant curRest;
-    string ImgLink = "Images/";
+    string foodHTMLlink;
     Database database = new Database();
+
 
     protected override void OnInitialized()
     {
@@ -105,6 +107,7 @@
             MusthaveRestaurants.Add(database.Restaurants[i]);
         }
         curRest = MusthaveRestaurants[0];
-        ImgLink += curRest.Restaurant_img_link;
+        foodHTMLlink = $"customerfood/{customerId}";
     }
+
 }

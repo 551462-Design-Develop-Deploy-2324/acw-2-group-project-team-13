@@ -16,6 +16,14 @@
 <body>
     <Routes />
     <script src="_framework/blazor.web.js"></script>
+    <script>
+        function InitCarousel() {
+            $('.carousel').carousel({
+                interval: 2000, // 2 seconds
+                pause: 'hover' // Pause on hover
+            });
+        }
+    </script>
 </body>
 
 </html>

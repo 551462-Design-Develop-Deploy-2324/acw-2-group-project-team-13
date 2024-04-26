@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Beach Basket Courier View
+        </title>
+        <link rel="stylesheet" href="Driverstyle.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>
+                Beach Basket
+                <!--<img src="the beach basket logo">-->
+            </h1>
+            <h2>
+                Orders to be delivered:
+            </h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75465.55638880543!2d-0.33198575000002606!3d53.76637074999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d6208f7c0160ad%3A0x6d447e9d82f130ff!2sHull!5e0!3m2!1sen!2suk!4v1714004263866!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!--This is an embedded map of hull for back end geolocation-->
+            <ul>
+                <li>
+                    <a href="https://www.google.com/maps/dir/53.7951296,-0.3683238/390+Cottingham+Rd,+Hull+HU6+8QE/@53.7930623,-0.4196797,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x4878bfa2bd496e95:0x55e70c52d2118388!2m2!1d-0.3820541!2d53.7703085!3e0?entry=ttu">6 piece mcnuggets for 21 Newland Avenue</a>
+                </li>
+                <li>
+                    <a href="https://www.google.com/maps/dir/53.7951296,-0.3683238/KFC+Hull+-+Beverley+Road,+Beverley+Road,+Hull/@53.7869624,-0.4583601,12z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x4878be55340e304b:0x3426da837f3f70d2!2m2!1d-0.3494376!2d53.7561452!3e0?entry=ttu">chicken fillet meal for 97 Salmon Grove</a>
+                </li>
+                <li>
+                    <a href="https://www.google.com/maps/dir/53.7951296,-0.3683238/Subway,+Cottingham+Road,+Hull/@53.7930623,-0.4196797,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x4878be4d637bca39:0x22673e3a21f4106c!2m2!1d-0.3553205!2d53.768654!3e0?entry=ttu">footlong meatball sub for 60 Ash Court</a>
+                </li>
+                <!--This is where your usable list woul go so the driver could take orders-->
+            </ul>
+            <button style="background-color: lightgreen; color: white; font-size: 24px;" onclick="myFunction()">
+                Complete order
+            </button>
+            <script>
+                function myFunction()
+                {
+                    alert("order has been completed")
+                }
+            </script>
+            <!--This is the button the courier would click in order to confirm that an order was completed-->
+        </div>
+    </body>
+</html>

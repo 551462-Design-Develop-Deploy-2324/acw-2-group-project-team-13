@@ -5,8 +5,20 @@
       "PackagePath": "staticwebassets\\BlazorBeachBasket.bundle.scp.css"
     },
     {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\CustomerFood.css",
+      "PackagePath": "staticwebassets\\CustomerFood.css"
+    },
+    {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\CustomerHome.css",
       "PackagePath": "staticwebassets\\CustomerHome.css"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\CustomerStore.css",
+      "PackagePath": "staticwebassets\\CustomerStore.css"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Food.html",
+      "PackagePath": "staticwebassets\\Food.html"
     },
     {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Forgot.css",
@@ -411,6 +423,10 @@
     {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\customercheckout.css",
+      "PackagePath": "staticwebassets\\customercheckout.css"
     },
     {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\food.html.txt",

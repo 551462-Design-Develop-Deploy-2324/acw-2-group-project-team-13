@@ -4,8 +4,9 @@
     "\\BlazorBeachBasket",
     "\\BlazorBeachBasket\\Components",
     "\\BlazorBeachBasket\\Components\\Db",
-    "\\BlazorBeachBasket\\Components\\Pages"
+    "\\BlazorBeachBasket\\Components\\Pages",
+    "\\BlazorBeachBasket\\wwwroot"
   ],
-  "SelectedNode": "\\BlazorBeachBasket.sln",
+  "SelectedNode": "\\BlazorBeachBasket\\Components\\Pages\\Driver.razor",
   "PreviewInSolutionExplorer": false
 }

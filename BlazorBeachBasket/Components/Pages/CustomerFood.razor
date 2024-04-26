@@ -1,0 +1,172 @@
+﻿@page "/customerfood/{customerId:int}"
+@using Db
+<head>
+    <PageTitle>CustomerFood</PageTitle>
+    <link rel="stylesheet" href="CustomerFood.css" />
+    <link rel="icon" href="Images/icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <Routes @rendermode="new InteractiveServerRenderMode(prerender: false)" />
+</head>
+
+<div class="top-section">
+    <a href="index.html" class="logo">BEACH BASKET</a>
+
+    <input type="text" id="searchInput" class="search-bar">
+    <div class="icons">
+        <span class="fas fa-user" @onclick="ViewAccount"></span>
+        <span class="heart-icon">&#x2661;</span>
+        <span class='fas fa-shopping-basket' style='font-size:28px'></span>
+    </div>
+</div>
+
+<!-- Horizontal menu -->
+<nav class="horizontal-menu">
+    <ul>
+        @foreach (var category in categories)
+        {
+            <li><a type="button" @onclick="() => FilterByCategory(category)">@category</a></li>
+        }
+    </ul>
+</nav>
+
+
+@foreach (var zsection in sections)
+{
+    <section class="@(zsection.CssClass)">
+        <h2>@zsection.Title</h2>
+        <div class="store-images">
+            @foreach(Restaurant restaurant in Mustshops)
+            {
+                <div class="store">
+                    <a href="/customerstore/@customerId/@restaurant.RestaurantId" ><img src="@restaurant.Restaurant_img_link" alt="@restaurant.RestaurantName"></a>
+                    <div class="store-details">
+                        <div class="store-name">@restaurant.RestaurantName</div>
+
+                        <div class="store-ratings">
+                            @foreach (var _ in Enumerable.Range(0, 5))
+                            {
+                                <span>&#9733;</span>
+                            }
+                            @foreach (var _ in Enumerable.Range(0, 5 - 2))
+                            {
+                                <span>&#9734;</span>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+}
+
+<footer>
+    <div>
+        <h3>Discover Beach Basket</h3>
+        <ul>
+            <li><a href="#">About us</a></li>
+        </ul>
+    </div>
+    <div>
+        <h3>Newsroom</h3>
+        <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookies</a></li>
+        </ul>
+    </div>
+    <div>
+        <h3>Careers</h3>
+        <ul>
+            <li><a href="#">Restaurant signup</a></li>
+            <li><a href="#">Become a rider</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Terms and conditions</a></li>
+        </ul>
+    </div>
+</footer>
+
+@code {
+    [Parameter]
+    public int customerId { get; set; }
+
+    Database database = new Database();
+    Customer customer;
+    List<Restaurant> Mustshops;
+    private class Section
+    {
+        public string Title { get; set; }
+        public string CssClass { get; set; }
+        public List<Restaurant> Stores { get; set; }
+    }
+
+    private Section[] sections;
+
+    private string[] categories = new string[]
+    {
+        "Snacks", "Desserts", "Beverages", "Icecream", "Sandwiches", "Pasta",
+        "Pizza", "Burgers", "Vegan", "Sushi", "Tacos", "Wraps"
+    };
+
+    private void ViewAccount()
+    {
+        // Implement view account functionality
+    }
+
+    private void FilterByCategory(string category)
+    {
+        if (category == "Burgers")
+        {
+            Mustshops = new List<Restaurant>
+            {
+                database.Restaurants[0]
+            };
+        }
+        else if (category == "Iceream")
+        {
+            Mustshops = new List<Restaurant>
+            {
+                database.Restaurants[1]
+            };
+        }
+        else if (category == "Beverages")
+        {
+            Mustshops = new List<Restaurant>
+            {
+                database.Restaurants[2]
+            };
+        }
+        else
+        {
+            Mustshops = new List<Restaurant>
+            {
+            };
+        }
+    }
+
+    private void currentSlide(int n)
+    {
+        // Implement current slide functionality
+    }
+
+    protected override void OnInitialized()
+    {
+        database.ImportData();
+        database.AssingData();
+        customer = database.Customers.FirstOrDefault(o => o.CustomerId == customerId);
+         Mustshops = new List<Restaurant>
+        {
+            database.Restaurants[0],
+            database.Restaurants[1],
+            database.Restaurants[2]
+        };
+        sections = new Section[]
+        {
+            new Section { Title = "Nearby Stores", CssClass = "nearby-stores", Stores = database.Restaurants },
+            //new Section { Title = "Most Popular Stores", CssClass = "popular-stores", Stores = popularStores },
+            //new Section { Title = "Top Rated Stores", CssClass = "top-rated-stores", Stores = topRatedStores }
+        };
+    }
+    
+}

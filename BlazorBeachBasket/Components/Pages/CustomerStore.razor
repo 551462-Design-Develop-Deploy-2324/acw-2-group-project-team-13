@@ -1,0 +1,118 @@
+﻿@page "/customerstore/{CustId:int}/{RestId:int}"
+@rendermode InteractiveServer
+@inject NavigationManager nav
+@using Db
+<head>
+    <PageTitle>@curRest.RestaurantName</PageTitle>
+    <link rel="stylesheet" href="CustomerStore.css" />
+    <link rel="icon" href="@curRest.Restaurant_img_link" />
+</head>
+
+
+<div class="container">
+    <div class="max-w-screen-md mx-auto">
+        <!-- Logo -->
+        <div class="text-center p-4">
+            <h1>@curRest.RestaurantName</h1>
+            <img src="@curRest.Restaurant_img_link" alt="Logo2">
+        </div>
+
+    </div>
+</div>
+
+<!-- Header -->
+<div class="header">
+    <h1>@curRest.RestaurantAddress</h1>
+    <div class="info-container">
+        <span class="info-item">4.8 Rating</span>
+        <span class="info-item">4-6 min Delivery</span>
+        <span class="info-item">987 Reviews</span>
+    </div>
+</div>
+<!-- Promotion Banner -->
+<div class="promotion-banner">
+    <p class="text-red-500 font-bold">@banner</p>
+</div>
+
+<div class="product-grid">
+    @foreach (MenuItem menuItem in curRest.Rest_Menu)
+    {
+        <div class="product-card">
+            <img src="@menuItem.Item_Image" alt="Product Image">
+            <h2>@menuItem.ItemName</h2>
+            <p>GBP £@menuItem.ItemPrice</p>
+            <button class="btn" type="button" @onclick="() => AddToCart(menuItem)">Add to Cart</button>
+        </div>
+    }
+</div>
+
+<div>
+    <p>@CartCount</p>
+    <button type="button" style="background: black" @onclick="@CheckOut">Checkout</button>
+</div>
+@code {
+    [Parameter]
+    public int CustId { get; set; }   
+    [Parameter]
+    public int RestId { get; set; }
+
+    Customer customer;
+    Restaurant curRest;
+    string foodHTMLlink;
+    Database database = new Database();
+
+    string banner;
+    int CartCount = 0;
+    List<MenuItem> Cart = new List<MenuItem>();
+
+    void AddToCart(MenuItem menuItem)
+    {
+        Cart.Add(menuItem);
+        CartCount++;
+    }
+
+    void CheckOut()
+    {
+        double ordercost = 0;
+        string ItemIds = "";
+        foreach(MenuItem menuItem in Cart)
+        {
+            ordercost += menuItem.ItemPrice;
+            ItemIds += menuItem.ItemId.ToString();
+        }
+        Order neworder = new Order(database.Orders.Last().orderId + 1, ordercost,ItemIds,"Preparing", RestId, CustId, database.Drivers[0].DriverId);
+        database.Orders.Add(neworder);
+        nav.NavigateTo($"/customercheckout/{CustId}/{neworder.orderId}");
+    }
+
+    protected override void OnInitialized()
+    {
+        database.ImportData();
+        database.AssingData();
+        customer = database.Customers.FirstOrDefault(o => o.CustomerId == CustId);
+        curRest = database.Restaurants.FirstOrDefault(o => o.RestaurantId == RestId);
+        
+        switch (RestId)
+        {
+            case 0:
+                banner = "Grab the Foodie Bonus with 15% Off!";
+                break;
+            case 1:
+                banner = "DISCOVER OUR NEW ICE CREAM FLAVORS - GET 15% OFF";
+                break;
+            case 2:
+                banner = "FREE DRINK ON US IF YOU ARE PART OF THE LOCAL TEAM!!!!";
+                break;
+            case 3:
+                banner = "";
+                break;
+            case 4:
+                banner = "20 DAYS MONEY BACK GARUNTEE!!";
+                break;
+            case 5:
+                banner = "";
+                break;
+        }
+    }
+
+}

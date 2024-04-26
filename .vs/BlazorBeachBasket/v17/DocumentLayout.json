@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "M:\\Code\\acw-2-group-project-team-13\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\db\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\db\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\pages\\customerhome.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\pages\\customerhome.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\wwwroot\\customerhome.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\wwwroot\\customerhome.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\wwwroot\\customerhome.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\wwwroot\\customerhome.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\db\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\db\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -30,21 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Database.cs",
-              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Db\\Database.cs",
-              "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Db\\Database.cs",
-              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Db\\Database.cs",
-              "RelativeToolTip": "BlazorBeachBasket\\Components\\Db\\Database.cs",
-              "ViewState": "AQIAAH4AAAAAAAAAAAAiwJAAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-25T17:55:18.597Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -63,26 +50,39 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Database.cs",
+              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Db\\Database.cs",
+              "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Db\\Database.cs",
+              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Db\\Database.cs",
+              "RelativeToolTip": "BlazorBeachBasket\\Components\\Db\\Database.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAswCIAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T17:55:18.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Login.razor",
               "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\Login.razor",
               "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Pages\\Login.razor",
               "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\Login.razor",
               "RelativeToolTip": "BlazorBeachBasket\\Components\\Pages\\Login.razor",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAAAG0AAAApAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-25T11:22:23.862Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "CustomerHome.css",
               "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\CustomerHome.css",
               "RelativeDocumentMoniker": "BlazorBeachBasket\\wwwroot\\CustomerHome.css",
               "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\CustomerHome.css",
               "RelativeToolTip": "BlazorBeachBasket\\wwwroot\\CustomerHome.css",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAgwLUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-04-25T11:21:52.222Z",
               "EditorCaption": ""
@@ -97,18 +97,17 @@
               "RelativeToolTip": "BlazorBeachBasket\\Components\\App.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-25T11:02:02.534Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-25T11:02:02.534Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CustomerHome.razor",
               "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\CustomerHome.razor",
               "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Pages\\CustomerHome.razor",
               "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\CustomerHome.razor",
               "RelativeToolTip": "BlazorBeachBasket\\Components\\Pages\\CustomerHome.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAABCAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAC8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-25T10:58:59.194Z",
               "EditorCaption": ""

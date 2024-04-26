@@ -1,12 +1,12 @@
 ﻿@page "/customerhome/{customerId:int}"
-@rendermode InteractiveServer
 @using Db
 
 <head>
     <PageTitle>CustomerHome</PageTitle>
     <link rel="stylesheet" href="CustomerHome.css" />
-    <link rel="icon" href="icon.png" />
+    <link rel="icon" href="Images/icon.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <Routes @rendermode="new InteractiveServerRenderMode(prerender: false)" />
 </head>
 <body>
     <div class="top-section">
@@ -32,17 +32,19 @@
 
     <div class="beach-basket-must-shops">
         <h2>Beach Basket Must Shops</h2>
-        <div class="store-container" id="must-shops-container">
-            <!-- Must shops will be dynamically added here -->
+        <div class="must-shops-container" id="must-shops-container">
+            @for (int i = 0; i < 3; i++)
+            {
+                <div class="store">
+                    <img src="@database.Restaurants[i].Restaurant_img_link" alt="@database.Restaurants[i].RestaurantName">
+                    <div class="store-details">
+                        <div class="store-name">@database.Restaurants[i].RestaurantName</div>
+                    </div>
+                </div>
+            }
         </div>
     </div>
 
-    <div class="popular-stores">
-        <h2>Popular Stores Near You</h2>
-        <div class="store-container" id="popular-stores-container">
-            <!-- Popular stores will be dynamically added here -->
-        </div>
-    </div>
 </body>
 
 
@@ -86,11 +88,23 @@
     public int customerId { get; set; }
 
     Customer customer;
+    Restaurant curRest;
+    string ImgLink = "Images/";
     Database database = new Database();
+
     protected override void OnInitialized()
     {
         database.ImportData();
         database.AssingData();
         customer = database.Customers.FirstOrDefault(o => o.CustomerId == customerId);
+
+        List<Restaurant> MusthaveRestaurants = new List<Restaurant>();
+
+        for(int i =0; i <3; i++)
+        {
+            MusthaveRestaurants.Add(database.Restaurants[i]);
+        }
+        curRest = MusthaveRestaurants[0];
+        ImgLink += curRest.Restaurant_img_link;
     }
 }

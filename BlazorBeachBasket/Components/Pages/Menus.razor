@@ -5,7 +5,10 @@
 @using Db
 @using BlazorBeachBasket
 
-<PageTitle>Menus</PageTitle>
+<head>
+    <PageTitle>Menus</PageTitle>
+    <link rel="stylesheet" href="RestPovstyles.css" />
+</head>
 
 
 <div class="menu-container">
@@ -34,7 +37,7 @@
                             <td>@menuitem.ItemId</td>
                             <td>@menuitem.ItemName</td>
                             <td>£@menuitem.ItemPrice.ToString("0.00")</td>
-                            <td style="border:none"><button type="button" style="@deleteButtonStyle" @onclick="() => DeleteItemFromDB(menuitem,false)">Delete</button></td>
+                            <td style="border:none"><button type="button" style="@deleteButtonStyle" @onclick="() => DeleteItemFromDB(menuitem,false)">-</button></td>
                         </tr>
                     }
                 </tbody>

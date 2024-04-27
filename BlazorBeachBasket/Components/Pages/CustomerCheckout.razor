@@ -46,9 +46,18 @@
         </div>
         <div class="form-group">
             <label for="paymentMethod">Payment Method</label>
+            <label for="CardName">Cardholder Name:</label>
+            <input type="text" id="CardName" placeholder="John Smith" required>
+            <label for="CardNumber">Card Number:</label>
+            <input type="text" id="CardNumber" placeholder="1234 5678 9123 4567" required>
+            <label for="ExpDate">ExpiryDate:</label>
+            <input type="month" id="ExpDate" placeholder="" required>
+            <label for="CVC">CVC:</label> 
+            <input type="text" id="CVC" required>
         </div>
 
-        <button type="submit">Place Order</button>
+        <button type="button" @onclick="@ToAfterPurchase">Place Order</button>
+        <button type="button" class="btn btn-sm btn-danger" @onclick="@CancelOrder">Cancel Order</button>
     </form>
 </div>
 
@@ -58,9 +67,22 @@
     public int orderId { get; set; }
 
     Database database = new Database();
-     protected override void OnInitialized()
+    Order order;
+    int customerId;
+    protected override void OnInitialized()
     {
         database.ImportData();
         database.AssingData();
+        order = database.Orders.FirstOrDefault(o => o.orderId == orderId);
+        customerId = order.order_customerId;
+    }
+    void CancelOrder()
+    {
+        database.Orders.Remove(order);
+        database.ExportData();
+        nav.NavigateTo($"/customerhome/{customerId}");
+    }
+    void ToAfterPurchase(){
+        nav.NavigateTo($"/afterpurchase/{customerId}");
     }
 }

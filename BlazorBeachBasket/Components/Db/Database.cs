@@ -191,6 +191,7 @@ namespace BlazorBeachBasket.Components.Db
                 string[] itemIds = order.order_ItemIds.Split();
                 foreach(string itemId in itemIds)
                 {
+                    if (itemId == "") { continue; }
                     MenuItem menuItem = MenuItems.FirstOrDefault(o => o.ItemId == int.Parse(itemId));
                     order.Order_items.Add(menuItem);
                 }
@@ -215,7 +216,7 @@ namespace BlazorBeachBasket.Components.Db
             cmd.ExecuteNonQuery();
             foreach(User user in Users)
             {
-                sql = $"Insert into Users values ({user.UserId},{user.UserType},'{user.Username}','{user.UserPassword})'";
+                sql = $"Insert into Users values ({user.UserId},{user.UserType},'{user.Username}','{user.UserPassword}');";
                 cmd = new SQLiteCommand(sql, connection);
                 cmd.ExecuteNonQuery();
             }
@@ -226,7 +227,7 @@ namespace BlazorBeachBasket.Components.Db
             cmd.ExecuteNonQuery();
             foreach (Restaurant restaurant in Restaurants)
             {
-                sql = $"Insert into Restaurants values ({restaurant.RestaurantId},'{restaurant.RestaurantName}','{restaurant.RestaurantAddress}','{restaurant.RestaurantPhone}',{restaurant.Restaurant_UserId})";
+                sql = $"Insert into Restaurants values ({restaurant.RestaurantId},'{restaurant.RestaurantName}','{restaurant.RestaurantAddress}','{restaurant.RestaurantPhone}',{restaurant.Restaurant_UserId});";
                 cmd = new SQLiteCommand(sql, connection);
                 cmd.ExecuteNonQuery();
             }
@@ -237,7 +238,7 @@ namespace BlazorBeachBasket.Components.Db
             cmd.ExecuteNonQuery();
             foreach(Customer customer in Customers)
             {
-                sql = $"Insert into Customers values ({customer.CustomerId},'{customer.CustomerName}','{customer.CustomerAddress}','{customer.CustomerPhone}',{customer.Customer_UserId})";
+                sql = $"Insert into Customers values ({customer.CustomerId},'{customer.CustomerName}','{customer.CustomerAddress}','{customer.CustomerPhone}',{customer.Customer_UserId});";
                 cmd = new SQLiteCommand(sql, connection);
                 cmd.ExecuteNonQuery();
             }
@@ -248,7 +249,7 @@ namespace BlazorBeachBasket.Components.Db
             cmd.ExecuteNonQuery();
             foreach (Driver driver in Drivers)
             {
-                sql = $"Insert into Drivers values ({driver.DriverId},'{driver.DriverName}','{driver.DriverPhone}',{driver.Driver_UserId})";
+                sql = $"Insert into Drivers values ({driver.DriverId},'{driver.DriverName}','{driver.DriverPhone}',{driver.Driver_UserId});";
                 cmd = new SQLiteCommand(sql, connection);
                 cmd.ExecuteNonQuery();
             }
@@ -259,7 +260,7 @@ namespace BlazorBeachBasket.Components.Db
             cmd.ExecuteNonQuery();
             foreach (MenuItem menuItem in MenuItems)
             {
-                sql = $"Insert into MenuItems values ({menuItem.ItemId},'{menuItem.ItemName}',{menuItem.ItemPrice},{menuItem.Item_RestId})";
+                sql = $"Insert into MenuItems values ({menuItem.ItemId},'{menuItem.ItemName}',{menuItem.ItemPrice},{menuItem.Item_RestId});";
                 cmd = new SQLiteCommand(sql, connection);
                 cmd.ExecuteNonQuery();
             }
@@ -270,7 +271,7 @@ namespace BlazorBeachBasket.Components.Db
             cmd.ExecuteNonQuery();
             foreach(Order order in Orders)
             {
-                sql = $"Insert into Orders values ({order.orderId},'{order.order_ItemIds}',{order.orderCost},'{order.orderStatus_str}',{order.order_restaurantId},{order.order_customerId},{order.order_driverId})";
+                sql = $"Insert into Orders values ({order.orderId},'{order.order_ItemIds}',{order.orderCost},'{order.orderStatus_str}',{order.order_restaurantId},{order.order_customerId},{order.order_driverId});";
                 cmd = new SQLiteCommand(sql, connection);
                 cmd.ExecuteNonQuery();
             }
@@ -281,7 +282,7 @@ namespace BlazorBeachBasket.Components.Db
             cmd.ExecuteNonQuery();
             foreach(PaymentCard card in PaymentCards)
             {
-                sql = $"Insert into PaymentCards values ({card.CardId},'{card.CardName}',{card.Card16digit},'{card.CardValid}','{card.CardExpiry}',{card.CardCVC},{card.Card_UserId})";
+                sql = $"Insert into PaymentCards values ({card.CardId},'{card.CardName}',{card.Card16digit},'{card.CardValid}','{card.CardExpiry}',{card.CardCVC},{card.Card_UserId});";
                 cmd = new SQLiteCommand(sql, connection);
                 cmd.ExecuteNonQuery();
             }
@@ -292,7 +293,7 @@ namespace BlazorBeachBasket.Components.Db
             cmd.ExecuteNonQuery();
             foreach (Image img in Images)
             {
-                sql = $"Insert into ImgLinks values ({img.ImgId},'{img.ImgLink}',{img.Img_ItemType},{img.Img_ItemId})";
+                sql = $"Insert into ImgLinks values ({img.ImgId},'{img.ImgLink}',{img.Img_ItemType},{img.Img_ItemId});";
                 cmd = new SQLiteCommand(sql, connection);
                 cmd.ExecuteNonQuery();
             }

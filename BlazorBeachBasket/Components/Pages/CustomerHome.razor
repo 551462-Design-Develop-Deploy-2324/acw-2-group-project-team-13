@@ -26,7 +26,7 @@
             <div class="image-description">Food</div>
         </div>
         <div class="image">
-            <a href="essentials.html"><img src="Images\image2.jpeg" alt="Beach Essentials"></a>
+            <a href="@essentialsHTMLlink"><img src="Images\image2.jpeg" alt="Beach Essentials"></a>
             <div class="image-description">Beach Essentials</div>
         </div>
     </div>
@@ -34,7 +34,7 @@
     <div class="beach-basket-must-shops">
         <h2>Beach Basket Must Shops</h2>
         <div class="must-shops-container" id="must-shops-container">
-            @for (int i = 0; i < 3; i++)
+            @for (int i = 0; i < 5; i++)
             {
                 <div class="store">
                     <img src="@database.Restaurants[i].Restaurant_img_link" alt="@database.Restaurants[i].RestaurantName">
@@ -91,6 +91,7 @@
     Customer customer;
     Restaurant curRest;
     string foodHTMLlink;
+    string essentialsHTMLlink;
     Database database = new Database();
 
 
@@ -108,6 +109,7 @@
         }
         curRest = MusthaveRestaurants[0];
         foodHTMLlink = $"customerfood/{customerId}";
+        essentialsHTMLlink = $"customeressentials/{customerId}";
     }
 
 }

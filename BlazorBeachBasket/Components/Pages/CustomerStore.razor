@@ -202,7 +202,8 @@
         }
         Order neworder = new Order(database.Orders.Last().orderId + 1, ordercost, ItemIds, "Preparing", RestId, CustId, database.Drivers[0].DriverId);
         database.Orders.Add(neworder);
-        nav.NavigateTo($"/customercheckout/{neworder.orderId}");
+        database.ExportData();
+        nav.NavigateTo($"/customercheckout/{neworder.orderId}?refresh=true",true);
     }
 
     protected override void OnInitialized()

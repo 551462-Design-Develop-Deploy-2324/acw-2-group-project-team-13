@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlazorBeachBasket")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80c9f10cfd29687b1c8b818b0c6b8d9d2601a5f5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ae62992e6ad0f95e8c8625a8dc6eb6b4aad9410")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlazorBeachBasket")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlazorBeachBasket")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

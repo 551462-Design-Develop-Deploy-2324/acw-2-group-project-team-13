@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\BlazorBeachBasket.bundle.scp.css"
     },
     {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\BeachBasket.db",
+      "PackagePath": "staticwebassets\\BeachBasket.db"
+    },
+    {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\CustomerFood.css",
       "PackagePath": "staticwebassets\\CustomerFood.css"
     },
@@ -411,6 +415,10 @@
     {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Login.css",
       "PackagePath": "staticwebassets\\Login.css"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\RestPovstyles.css",
+      "PackagePath": "staticwebassets\\RestPovstyles.css"
     },
     {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\app.css",

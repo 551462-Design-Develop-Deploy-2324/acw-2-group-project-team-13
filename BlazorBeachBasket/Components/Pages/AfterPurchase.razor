@@ -1,0 +1,22 @@
+﻿@page "/afterpurchase/{customerId:int}"
+@rendermode InteractiveServer
+@inject NavigationManager nav
+
+<PageTitle>After Purchase</PageTitle>
+<link rel="stylesheet" href="~/RestPovstyles.css"
+
+<div id="home-container">
+    <h2>Purchase complete</h2>
+    <h3>It will be with you soon...</h3>
+    <button type="button" @onclick="@ToHome">Return to Beach Basket Homepage</button>
+</div>
+
+@code {
+    [Parameter]
+    public int customerId { get; set; }
+
+    void ToHome()
+    {
+        nav.NavigateTo($"/customerhome/{customerId}");
+    }
+}

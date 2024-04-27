@@ -2,9 +2,16 @@
 @rendermode InteractiveServer
 @inject NavigationManager nav
 @using System.Collections.Generic
+@using System.Linq
 @using Db
 @using BlazorBeachBasket
-<PageTitle>Orders</PageTitle>
+@inject IJSRuntime JSRuntime
+
+<head>
+    <PageTitle>Orders</PageTitle>
+    <link rel="stylesheet" href="RestPovstyles.css" />
+</head>
+
 
 <div class="orders-container">
     <div class="header">
@@ -14,21 +21,34 @@
         <button class="update-btn" onclick="toggleActionsColumn()">Update Status</button>
     </div>
 
-    <div id="orderDetailsModal" class="modal">
+    <div id="orderDetailsModal" class="modal" style="display:@orderdetailStyle">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span type="button" class="close" @onclick="()=>orderInfoModal(new Order())">&times;</span>
             <h2>Order Details</h2>
-            <p id="orderDetails"></p>
+            <h4><strong>Customer Id:</strong> @currentOrder.order_customerId</h4>
+            <p><strong>Order ID:</strong> @currentOrder.orderId</p>
+            <p><strong>Items Ordered:</strong></p>
+            <ul>
+                @foreach (MenuItem item in currentOrder.Order_items)
+                {
+                    <li>
+                        @item.ItemName
+                    </li>
+                }
+            </ul>
+            <p><strong>Driver Id:</strong>@currentOrder.order_driverId</p>
+
+            <p><strong>Change Order Status:</strong></p>
+            <select @bind="selectedStatus">
+                <option value="Preparing">Preparing</option>
+                <option value="Enroute">Enroute</option>
+                <option value="Delivered">Delivered</option>
+            </select>
+            <button type="button" @onclick="UpdateOrderStatus">Update Status</button>
         </div>
     </div>
 
-    <div id="confirmModal" class="modal">
-        <div class="modal-content">
-            <p>Are you sure you want to change the status?</p>
-            <button id="confirmBtn" style="background-color: darkgreen; color: black;">Confirm</button>
-            <button id="cancelBtn" style="background-color: darkred; color: black;">Cancel</button>
-        </div>
-    </div>
+
     <div class="table-container">
         <table>
             <thead>
@@ -40,6 +60,25 @@
                 </tr>
             </thead>
             <tbody>
+                @foreach(Order zorder in orderedOrders)
+                {
+                    <tr>
+                        <td>@zorder.orderId</td>
+                        <td><button type="button" @onclick="()=>orderInfoModal(zorder)">
+                                <ul>
+                                    @foreach (MenuItem menuItem in zorder.Order_items)
+                                    {
+                                        <li>
+                                            @menuItem.ItemName
+                                        </li>
+                                    }
+                                </ul>
+                            </button>
+                        </td>
+                        <td>£@zorder.orderCost.ToString("0.00")</td>
+                        <td>@zorder.orderStatus_str</td>
+                    </tr>
+                }
             </tbody>
         </table>
     </div>
@@ -50,21 +89,56 @@
     [Parameter]
     public int RestId { get; set; }
 
-
+    public string orderdetailStyle = "none";
     Restaurant restaurant;
     Database database = new Database();
+    Order currentOrder = new Order();
+    List<Order> restaurant_orders = new List<Order>();
+    List<Order> orderedOrders => restaurant_orders.OrderBy(order => order.orderStatus_str == "Preparing" ? 0 :
+                                                            order.orderStatus_str == "Enroute" ? 1 :
+                                                            2).ToList();
     protected override void OnInitialized()
     {
         database.ImportData();
         database.AssingData();
         restaurant = database.Restaurants.FirstOrDefault(o => o.RestaurantId == RestId);
+        foreach(Order order in database.Orders)
+        {
+            if(order.order_restaurantId == restaurant.RestaurantId)
+            {
+                restaurant_orders.Add(order);
+            }
+        }
+
     }
 
     void ToHome()
     {
-        nav.NavigateTo($"/home/{RestId}");
+        nav.NavigateTo($"/resthome/{RestId}");
     }
-   
-}
 
-            
+    void orderInfoModal(Order Item)
+    {
+        currentOrder = Item;
+        selectedStatus = currentOrder.orderStatus_str;
+        if(orderdetailStyle == "none")
+        {
+            orderdetailStyle = "block";
+        }
+        else
+        {
+            orderdetailStyle = "none";
+        }
+    }
+
+    string selectedStatus;
+    void UpdateOrderStatus()
+    {
+        // Update the order status
+        currentOrder.orderStatus_str = selectedStatus;
+
+        database.Orders.FirstOrDefault(currentOrder).orderStatus_str = selectedStatus;
+        database.ExportData();
+        orderdetailStyle = "none";
+    }
+}

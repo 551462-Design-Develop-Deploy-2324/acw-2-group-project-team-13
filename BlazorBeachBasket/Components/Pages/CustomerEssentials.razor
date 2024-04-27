@@ -1,4 +1,4 @@
-﻿@page "/customerfood/{customerId:int}"
+﻿@page "/customeressentials/{customerId:int}"
 @using Db
 <head>
     <PageTitle>CustomerFood</PageTitle>
@@ -34,10 +34,10 @@
     <section class="@(zsection.CssClass)">
         <h2>@zsection.Title</h2>
         <div class="store-images">
-            @foreach(Restaurant restaurant in Mustshops)
+            @foreach (Restaurant restaurant in Mustshops)
             {
                 <div class="store">
-                    <a href="@($"/customerstore/{@customerId}/{@restaurant.RestaurantId}?refresh=true")" ><img src="@restaurant.Restaurant_img_link" alt="@restaurant.RestaurantName"></a>
+                    <a href="@($"/customerstore/{@customerId}/{@restaurant.RestaurantId}?refresh=true")"><img src="@restaurant.Restaurant_img_link" alt="@restaurant.RestaurantName"></a>
                     <div class="store-details">
                         <div class="store-name">@restaurant.RestaurantName</div>
 
@@ -104,8 +104,8 @@
 
     private string[] categories = new string[]
     {
-        "Snacks", "Desserts", "Beverages", "Icecream", "Sandwiches", "Pasta",
-        "Pizza", "Burgers", "Vegan", "Sushi", "Tacos", "Wraps"
+        "Sunglasses", "Flip-Flops", "Beach Towels", "Sunscreen", "Hats", "Bags",
+        "Chairs", "Umbrellas", "Swimwear", "Toys", "Snorkeling Gear"
     };
 
     private void ViewAccount()
@@ -119,21 +119,21 @@
         {
             Mustshops = new List<Restaurant>
             {
-                database.Restaurants[0]
+                database.Restaurants[3]
             };
         }
         else if (category == "Iceream")
         {
             Mustshops = new List<Restaurant>
             {
-                database.Restaurants[1]
+                database.Restaurants[4]
             };
         }
         else if (category == "Beverages")
         {
             Mustshops = new List<Restaurant>
             {
-                database.Restaurants[2]
+                database.Restaurants[5]
             };
         }
         else
@@ -154,11 +154,11 @@
         database.ImportData();
         database.AssingData();
         customer = database.Customers.FirstOrDefault(o => o.CustomerId == customerId);
-         Mustshops = new List<Restaurant>
+        Mustshops = new List<Restaurant>
         {
-            database.Restaurants[0],
-            database.Restaurants[1],
-            database.Restaurants[2]
+            database.Restaurants[3],
+            database.Restaurants[4],
+            database.Restaurants[5]
         };
         sections = new Section[]
         {
@@ -167,5 +167,5 @@
             //new Section { Title = "Top Rated Stores", CssClass = "top-rated-stores", Stores = topRatedStores }
         };
     }
-    
+
 }

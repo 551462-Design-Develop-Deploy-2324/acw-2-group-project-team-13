@@ -3,56 +3,68 @@
   "WorkspaceRootPath": "M:\\Code\\acw-2-group-project-team-13\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\pages\\driver.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\pages\\driver.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\wwwroot\\driverpov.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\wwwroot\\driverpov.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\pages\\customercheckout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\pages\\customercheckout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\pages\\customerfood.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\pages\\customerfood.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\pages\\customercheckout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\pages\\customercheckout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\wwwroot\\customercheckout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\wwwroot\\customercheckout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\pages\\customerstore.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\pages\\customerstore.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\db\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\db\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\pages\\menus.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\pages\\menus.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\pages\\customerhome.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\pages\\customerhome.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\wwwroot\\customerhome.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\wwwroot\\customerhome.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\pages\\driver.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\pages\\driver.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\wwwroot\\customerfood.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\wwwroot\\customerfood.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\pages\\customerstore.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\pages\\customerstore.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\wwwroot\\customercheckout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\wwwroot\\customercheckout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\wwwroot\\driverpov.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\wwwroot\\driverpov.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\wwwroot\\customerstore.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\wwwroot\\customerstore.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\wwwroot\\customerhome.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\wwwroot\\customerhome.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\db\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\db\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\wwwroot\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\wwwroot\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\wwwroot\\customerfood.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\wwwroot\\customerfood.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|m:\\code\\acw-2-group-project-team-13\\blazorbeachbasket\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21348FBD-3B30-42FA-BEE2-DC836ACBB573}|BlazorBeachBasket\\BlazorBeachBasket.csproj|solutionrelative:blazorbeachbasket\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,123 +94,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Driver.razor",
-              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\Driver.razor",
-              "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Pages\\Driver.razor",
-              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\Driver.razor",
-              "RelativeToolTip": "BlazorBeachBasket\\Components\\Pages\\Driver.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-26T10:09:49.067Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "driverPov.html",
-              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\driverPov.html",
-              "RelativeDocumentMoniker": "BlazorBeachBasket\\wwwroot\\driverPov.html",
-              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\driverPov.html",
-              "RelativeToolTip": "BlazorBeachBasket\\wwwroot\\driverPov.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-04-26T10:07:24.398Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CustomerCheckout.razor",
-              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\CustomerCheckout.razor",
-              "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Pages\\CustomerCheckout.razor",
-              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\CustomerCheckout.razor",
-              "RelativeToolTip": "BlazorBeachBasket\\Components\\Pages\\CustomerCheckout.razor",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAAIAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-26T09:49:04.861Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CustomerStore.css",
-              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\CustomerStore.css",
-              "RelativeDocumentMoniker": "BlazorBeachBasket\\wwwroot\\CustomerStore.css",
-              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\CustomerStore.css",
-              "RelativeToolTip": "BlazorBeachBasket\\wwwroot\\CustomerStore.css",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAiwHEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-26T09:11:04.225Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CustomerStore.razor",
-              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\CustomerStore.razor",
-              "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Pages\\CustomerStore.razor",
-              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\CustomerStore.razor",
-              "RelativeToolTip": "BlazorBeachBasket\\Components\\Pages\\CustomerStore.razor",
-              "ViewState": "AQIAADYAAAAAAAAAAAAAAFYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-26T09:08:27.676Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CustomerFood.css",
-              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\CustomerFood.css",
-              "RelativeDocumentMoniker": "BlazorBeachBasket\\wwwroot\\CustomerFood.css",
-              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\CustomerFood.css",
-              "RelativeToolTip": "BlazorBeachBasket\\wwwroot\\CustomerFood.css",
-              "ViewState": "AQIAAKIAAAAAAAAAAAAAACsAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-26T06:55:44.465Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CustomerFood.razor",
-              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\CustomerFood.razor",
-              "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Pages\\CustomerFood.razor",
-              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\CustomerFood.razor",
-              "RelativeToolTip": "BlazorBeachBasket\\Components\\Pages\\CustomerFood.razor",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAAACgAAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-26T06:55:01.828Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "Database.cs",
               "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Db\\Database.cs",
               "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Db\\Database.cs",
               "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Db\\Database.cs",
               "RelativeToolTip": "BlazorBeachBasket\\Components\\Db\\Database.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAswCIAAAAiAAAA",
+              "ViewState": "AQIAAAoBAAAAAAAAAAAuwBYBAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-25T17:55:18.597Z"
+              "WhenOpened": "2024-04-25T17:55:18.597Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Login.razor",
               "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\Login.razor",
               "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Pages\\Login.razor",
               "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\Login.razor",
               "RelativeToolTip": "BlazorBeachBasket\\Components\\Pages\\Login.razor",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAAAG0AAAArAAAA",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAAGIAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-25T11:22:23.862Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "CustomerHome.css",
               "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\CustomerHome.css",
               "RelativeDocumentMoniker": "BlazorBeachBasket\\wwwroot\\CustomerHome.css",
               "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\CustomerHome.css",
               "RelativeToolTip": "BlazorBeachBasket\\wwwroot\\CustomerHome.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAHAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAD4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-04-25T11:21:52.222Z"
             },
@@ -210,25 +138,152 @@
               "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Pages\\CustomerHome.razor",
               "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\CustomerHome.razor",
               "RelativeToolTip": "BlazorBeachBasket\\Components\\Pages\\CustomerHome.razor",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAAAYAAAAfAAAA",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAADMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-25T10:58:59.194Z"
+              "WhenOpened": "2024-04-25T10:58:59.194Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
+              "Title": "CustomerFood.razor",
+              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\CustomerFood.razor",
+              "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Pages\\CustomerFood.razor",
+              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\CustomerFood.razor",
+              "RelativeToolTip": "BlazorBeachBasket\\Components\\Pages\\CustomerFood.razor",
+              "ViewState": "AQIAABkAAAAAAAAAAADwvygAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-26T06:55:01.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomerCheckout.razor",
+              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\CustomerCheckout.razor",
+              "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Pages\\CustomerCheckout.razor",
+              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\CustomerCheckout.razor",
+              "RelativeToolTip": "BlazorBeachBasket\\Components\\Pages\\CustomerCheckout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-27T09:15:53.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Driver.razor",
+              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\Driver.razor",
+              "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Pages\\Driver.razor",
+              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\Driver.razor",
+              "RelativeToolTip": "BlazorBeachBasket\\Components\\Pages\\Driver.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-26T10:09:49.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CustomerStore.css",
+              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\CustomerStore.css",
+              "RelativeDocumentMoniker": "BlazorBeachBasket\\wwwroot\\CustomerStore.css",
+              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\CustomerStore.css",
+              "RelativeToolTip": "BlazorBeachBasket\\wwwroot\\CustomerStore.css",
+              "ViewState": "AQIAACUAAAAAAAAAAAAAwHIAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-26T09:11:04.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Menus.razor",
+              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\Menus.razor",
+              "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Pages\\Menus.razor",
+              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\Menus.razor",
+              "RelativeToolTip": "BlazorBeachBasket\\Components\\Pages\\Menus.razor",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAFcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-27T09:33:13.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "customercheckout.css",
               "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\customercheckout.css",
               "RelativeDocumentMoniker": "BlazorBeachBasket\\wwwroot\\customercheckout.css",
               "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\customercheckout.css",
               "RelativeToolTip": "BlazorBeachBasket\\wwwroot\\customercheckout.css",
-              "ViewState": "AQIAACMAAAAAAAAAAAAiwFMAAAAAAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAswFMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-26T09:50:47.145Z"
+              "WhenOpened": "2024-04-26T09:50:47.145Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
+              "Title": "CustomerStore.razor",
+              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\CustomerStore.razor",
+              "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\Pages\\CustomerStore.razor",
+              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\Pages\\CustomerStore.razor",
+              "RelativeToolTip": "BlazorBeachBasket\\Components\\Pages\\CustomerStore.razor",
+              "ViewState": "AQIAAMkAAAAAAAAAAADwv+wAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-26T09:08:27.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "driverPov.html",
+              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\driverPov.html",
+              "RelativeDocumentMoniker": "BlazorBeachBasket\\wwwroot\\driverPov.html",
+              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\driverPov.html",
+              "RelativeToolTip": "BlazorBeachBasket\\wwwroot\\driverPov.html",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwC0AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-26T10:07:24.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Login.css",
+              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Login.css",
+              "RelativeDocumentMoniker": "BlazorBeachBasket\\wwwroot\\Login.css",
+              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Login.css",
+              "RelativeToolTip": "BlazorBeachBasket\\wwwroot\\Login.css",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAGkAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-26T18:22:39.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "app.css",
+              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\app.css",
+              "RelativeDocumentMoniker": "BlazorBeachBasket\\wwwroot\\app.css",
+              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\app.css",
+              "RelativeToolTip": "BlazorBeachBasket\\wwwroot\\app.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-26T18:30:09.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CustomerFood.css",
+              "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\CustomerFood.css",
+              "RelativeDocumentMoniker": "BlazorBeachBasket\\wwwroot\\CustomerFood.css",
+              "ToolTip": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\CustomerFood.css",
+              "RelativeToolTip": "BlazorBeachBasket\\wwwroot\\CustomerFood.css",
+              "ViewState": "AQIAAKIAAAAAAAAAAAAAACsAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-26T06:55:44.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "App.razor",
               "DocumentMoniker": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\Components\\App.razor",
               "RelativeDocumentMoniker": "BlazorBeachBasket\\Components\\App.razor",

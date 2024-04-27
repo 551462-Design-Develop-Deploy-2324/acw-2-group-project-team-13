@@ -34,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDdXN0b21lckhvbWUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[M:/Code/acw-2-group-project-team-13/BlazorBeachBasket/Components/Pages/CustomerMarket.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDdXN0b21lck1hcmtldC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [M:/Code/acw-2-group-project-team-13/BlazorBeachBasket/Components/Pages/CustomerStore.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDdXN0b21lclN0b3JlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

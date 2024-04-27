@@ -70,8 +70,8 @@
 @code{
     [Parameter]
     public int RestId { get; set; }
-    
-    
+
+
     Restaurant restaurant;
     Database database = new Database();
     protected override void OnInitialized()
@@ -83,7 +83,7 @@
 
     void ToHome()
     {
-        nav.NavigateTo($"/home/{RestId}");
+        nav.NavigateTo($"/resthome/{RestId}");
     }
 
     //Edit button
@@ -164,6 +164,7 @@
         addItem_newId = restaurant.Rest_Menu.Last().ItemId + 1;
         MenuItem newMenuItem = new MenuItem(addItem_newId,addItem_newName,addItem_newPrice,RestId);
         restaurant.Rest_Menu.Add(newMenuItem);
+        database.ExportData();
         ToggleAddItemModal();
     }
 
@@ -177,6 +178,7 @@
         try
         {
             restaurant.Rest_Menu.Remove(itemToDelete);
+            database.ExportData();
             ToggleConfirmationModal();
         }
         catch

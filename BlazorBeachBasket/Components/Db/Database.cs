@@ -120,7 +120,7 @@ namespace BlazorBeachBasket.Components.Db
             {
                 while (reader.Read())
                 {
-                    Order order = new Order(int.Parse(reader[0].ToString()), double.Parse(reader[1].ToString()), reader[2].ToString(), reader[3].ToString(), int.Parse(reader[4].ToString()),int.Parse(reader[5].ToString()), int.Parse(reader[6].ToString()));
+                    Order order = new Order(int.Parse(reader[0].ToString()), double.Parse(reader[2].ToString()), reader[1].ToString(), reader[3].ToString(), int.Parse(reader[4].ToString()),int.Parse(reader[5].ToString()), int.Parse(reader[6].ToString()));
                     Orders.Add(order);
                 }
             }
@@ -270,7 +270,7 @@ namespace BlazorBeachBasket.Components.Db
             cmd.ExecuteNonQuery();
             foreach(Order order in Orders)
             {
-                sql = $"Insert into Orders values ({order.orderId},{order.orderCost},'{order.order_ItemIds}','{order.orderStatus_str}',{order.order_restaurantId},{order.order_customerId},{order.order_driverId})";
+                sql = $"Insert into Orders values ({order.orderId},'{order.order_ItemIds}',{order.orderCost},'{order.orderStatus_str}',{order.order_restaurantId},{order.order_customerId},{order.order_driverId})";
                 cmd = new SQLiteCommand(sql, connection);
                 cmd.ExecuteNonQuery();
             }
@@ -383,6 +383,10 @@ namespace BlazorBeachBasket.Components.Db
             DriverName = driverName;
             DriverPhone = driverPhone;
             Driver_UserId = driver_UserId;
+        }
+        public Driver()
+        {
+
         }
     }
     class MenuItem

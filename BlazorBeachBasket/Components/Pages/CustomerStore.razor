@@ -1,11 +1,11 @@
 ﻿@page "/customerstore/{CustId:int}/{RestId:int}"
 @rendermode InteractiveServer
 @inject NavigationManager nav
+
 @using Db
 <head>
     <PageTitle>@curRest.RestaurantName</PageTitle>
     <link rel="stylesheet" href="CustomerStore.css" />
-    <link rel="icon" href="@curRest.Restaurant_img_link" />
 </head>
 
 
@@ -34,6 +34,54 @@
     <p class="text-red-500 font-bold">@banner</p>
 </div>
 
+
+
+<div class="modal" tabindex="-1" style="display: @modalDisplay">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Checkout</h5>
+                <button type="button" class="close" @onclick="CloseModal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-borderless">
+                    <tbody>
+                        @foreach (var group in Cart.GroupBy(item => item.ItemName))
+                        {
+                            <tr>
+                                <td>
+                                    @if (group.Count() > 1)
+                                    {
+                                        <span>@group.Key - x @group.Count() - £@((group.First().ItemPrice * group.Count()).ToString("0.00"))</span>
+                                    }
+                                    else
+                                    {
+                                        <span>@group.Key - £@group.First().ItemPrice</span>
+                                    }
+                                </td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary" style="background-color:black" @onclick="() => modalAddItem(group.First())">+</button>
+                                </td>
+                                <td>-</td>
+                                <td>
+                                    <button class="btn btn-sm btn-danger" @onclick="() => modalRemoveItem(group.First())">-</button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark" @onclick="ProceedToCheckout">Proceed to Checkout</button>
+                <button type="button" class="btn btn-secondary" @onclick="CloseModal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <div class="product-grid">
     @foreach (MenuItem menuItem in curRest.Rest_Menu)
     {
@@ -46,10 +94,51 @@
     }
 </div>
 
-<div>
-    <p>@CartCount</p>
-    <button type="button" style="background: black" @onclick="@CheckOut">Checkout</button>
+
+
+<div style="text-align: center; margin-top: 20px;">
+    <div style="display: inline-block; background-color: black; padding: 10px; border-radius: 5px;">
+        <a style="color: white; text-decoration: none;">
+            <img src="Images/icon.png" width="30px;" style="vertical-align: middle;" />
+            <span style="vertical-align: middle;">  @CartCount</span>
+        </a>
+        <button type="button" class="btn btn-dark" style="margin-left: 10px;" @onclick="@ShowModal">ViewBasket</button>
+    </div>
 </div>
+
+<footer>
+    <div>
+        <h3>Discover @curRest.RestaurantName</h3>
+        <ul>
+
+            <li><a href="#">About us</a></li>
+
+        </ul>
+    </div>
+    <div>
+        <h3>Newsroom</h3>
+        <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookies</a></li>
+        </ul>
+    </div>
+    <div>
+        <h3>Careers</h3>
+        <ul>
+            <li><a href="#">Restaurant signup</a></li>
+            <li><a href="#">Become a rider</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Terms and conditions</a></li>
+
+
+        </ul>
+    </div>
+</footer>
+
+
 @code {
     [Parameter]
     public int CustId { get; set; }   
@@ -58,31 +147,62 @@
 
     Customer customer;
     Restaurant curRest;
-    string foodHTMLlink;
     Database database = new Database();
 
     string banner;
     int CartCount = 0;
     List<MenuItem> Cart = new List<MenuItem>();
 
+    bool isCartEmpty => CartCount == 0;
     void AddToCart(MenuItem menuItem)
     {
         Cart.Add(menuItem);
         CartCount++;
     }
 
-    void CheckOut()
+    public string modalDisplay = "none";
+    void ShowModal()
+    {
+        modalDisplay = "block";
+    }
+    void CloseModal()
+    {
+        modalDisplay = "none";
+    }
+    void ProceedToCheckout()
+    {
+        if (Cart.Count > 0)
+        {
+            // Show the new modal for user information
+            ToCheckOut();
+        }
+        else
+        {
+
+        }
+    }
+    string userInfoModalDisplay = "none";
+
+    void modalAddItem(MenuItem item)
+    {
+        Cart.Add(item);
+    }
+    void modalRemoveItem(MenuItem item)
+    {
+        Cart.Remove(item);
+    }
+    void ToCheckOut()
     {
         double ordercost = 0;
         string ItemIds = "";
-        foreach(MenuItem menuItem in Cart)
+        foreach (MenuItem menuItem in Cart)
         {
             ordercost += menuItem.ItemPrice;
-            ItemIds += menuItem.ItemId.ToString();
+            ItemIds += menuItem.ItemId.ToString() + " ";
         }
-        Order neworder = new Order(database.Orders.Last().orderId + 1, ordercost,ItemIds,"Preparing", RestId, CustId, database.Drivers[0].DriverId);
+        Order neworder = new Order(database.Orders.Last().orderId + 1, ordercost, ItemIds, "Preparing", RestId, CustId, database.Drivers[0].DriverId);
         database.Orders.Add(neworder);
-        nav.NavigateTo($"/customercheckout/{CustId}/{neworder.orderId}");
+        nav.NavigateTo($"/customercheckout/{neworder.orderId}");
     }
 
     protected override void OnInitialized()
@@ -91,7 +211,6 @@
         database.AssingData();
         customer = database.Customers.FirstOrDefault(o => o.CustomerId == CustId);
         curRest = database.Restaurants.FirstOrDefault(o => o.RestaurantId == RestId);
-        
         switch (RestId)
         {
             case 0:

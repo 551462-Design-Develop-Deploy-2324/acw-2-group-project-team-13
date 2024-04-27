@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VQmPlMRs+vbhqoEtplmPl6D9HSVPUIZyKrvpcHEq4sQ=",
+  "Hash": "d0RF6tb0RbOzWMBxCjLcMkd6fxoVne7up+Uni6ie9nU=",
   "Source": "BlazorBeachBasket",
   "BasePath": "_content/BlazorBeachBasket",
   "Mode": "Default",
@@ -188,12 +188,12 @@
       "OriginalItemSpec": "wwwroot\\CustomerStore.css"
     },
     {
-      "Identity": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Food.html",
+      "Identity": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\driverPov.html",
       "SourceId": "BlazorBeachBasket",
       "SourceType": "Discovered",
       "ContentRoot": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\",
       "BasePath": "_content/BlazorBeachBasket",
-      "RelativePath": "Food.html",
+      "RelativePath": "driverPov.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -204,15 +204,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Food.html"
+      "OriginalItemSpec": "wwwroot\\driverPov.html"
     },
     {
-      "Identity": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\food.html.txt",
+      "Identity": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Driverstyle.css",
       "SourceId": "BlazorBeachBasket",
       "SourceType": "Discovered",
       "ContentRoot": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\",
       "BasePath": "_content/BlazorBeachBasket",
-      "RelativePath": "food.html.txt",
+      "RelativePath": "Driverstyle.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -223,7 +223,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\food.html.txt"
+      "OriginalItemSpec": "wwwroot\\Driverstyle.css"
     },
     {
       "Identity": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Forgot.css",

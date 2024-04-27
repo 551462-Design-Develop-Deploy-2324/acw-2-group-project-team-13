@@ -111,6 +111,9 @@
                 }
                 else if(user.UserType == 2)
                 {
+                    Db.Driver driver = database.Drivers.FirstOrDefault(o => o.Driver_UserId == user.UserId);
+                    string newURL = $"/Driver/{driver.DriverId}";
+                    nav.NavigateTo(newURL);
                 }
             }
         }

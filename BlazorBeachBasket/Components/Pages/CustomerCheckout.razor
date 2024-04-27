@@ -1,4 +1,22 @@
-﻿@page "/customercheckout/{customerId:int}/{orderId:int}"
+﻿@page "/customercheckout/{orderId:int}"
+@rendermode InteractiveServer
+@inject NavigationManager nav
+@inject IJSRuntime JSRuntime
+@using Db
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Checkout</title>
+    <!--map using leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="customercheckout.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+
+</head>
+
 
 <div class="container">
     <h1>Checkout</h1>
@@ -28,29 +46,21 @@
         </div>
         <div class="form-group">
             <label for="paymentMethod">Payment Method</label>
-
-            <div class="row">
-                <div class="column">
-                    <img src="C:\Users\747026\OneDrive - hull.ac.uk\ddd\ddd\klarna.png" alt="Snow" style="width:100%" onclick="toggleBorder(this)">
-                </div>
-                <div class="column">
-                    <img src="C:\Users\747026\OneDrive - hull.ac.uk\ddd\ddd\visa.png" alt="Forest" style="width:100%" onclick="toggleBorder(this)">
-                </div>
-                <div class="column">
-                    <img src="C:\Users\747026\OneDrive - hull.ac.uk\ddd\ddd\mastercard.png" alt="Mountains" style="width:100%" onclick="toggleBorder(this)">
-                </div>
-                <div class="column">
-                    <img src="C:\Users\747026\OneDrive - hull.ac.uk\ddd\ddd\apay.png" alt="Snow" style="width:100%" onclick="toggleBorder(this)">
-                </div>
-            </div>
         </div>
 
         <button type="submit">Place Order</button>
     </form>
 </div>
-@code {
+
+
+@code{
     [Parameter]
-    public int customerId { get; set; }
-    [Parameter]
-    public int orderId{ get; set; }
+    public int orderId { get; set; }
+
+    Database database = new Database();
+     protected override void OnInitialized()
+    {
+        database.ImportData();
+        database.AssingData();
+    }
 }

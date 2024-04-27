@@ -1,0 +1,16 @@
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\BlazorBeachBasket.exe
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\appsettings.json
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\BlazorBeachBasket.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\BlazorBeachBasket.deps.json
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\BlazorBeachBasket.runtimeconfig.json
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\BlazorBeachBasket.pdb
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\System.Data.SQLite.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\runtimes\linux-x64\native\libsqlite3.so
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\runtimes\osx-x64\native\libsqlite3.dylib
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\runtimes\win7-x64\native\sqlite3.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\runtimes\win7-x86\native\sqlite3.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\runtimes\linux-x64\native\SQLite.Interop.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\runtimes\osx-x64\native\SQLite.Interop.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\runtimes\win-x64\native\SQLite.Interop.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\runtimes\win-x86\native\SQLite.Interop.dll

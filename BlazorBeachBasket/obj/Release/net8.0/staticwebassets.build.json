@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pf5Cwy+FX3PZyZMkjUe7iE1Mc3lIFTj4QwavwSdh8Qk=",
+  "Hash": "DW+6kjnZD3Ri1uheuttBll4B5qStrRk7Ox3v4LlUtkM=",
   "Source": "BlazorBeachBasket",
   "BasePath": "_content/BlazorBeachBasket",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\app.css"
+    },
+    {
+      "Identity": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\BeachBasket.db",
+      "SourceId": "BlazorBeachBasket",
+      "SourceType": "Discovered",
+      "ContentRoot": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\",
+      "BasePath": "_content/BlazorBeachBasket",
+      "RelativePath": "BeachBasket.db",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\BeachBasket.db"
     },
     {
       "Identity": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\bootstrap\\bootstrap.min.css",
@@ -2105,6 +2124,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\newaccount.css"
+    },
+    {
+      "Identity": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\RestPovstyles.css",
+      "SourceId": "BlazorBeachBasket",
+      "SourceType": "Discovered",
+      "ContentRoot": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\",
+      "BasePath": "_content/BlazorBeachBasket",
+      "RelativePath": "RestPovstyles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\RestPovstyles.css"
     }
   ]
 }

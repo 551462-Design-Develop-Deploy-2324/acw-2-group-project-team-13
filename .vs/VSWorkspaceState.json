@@ -7,6 +7,6 @@
     "\\BlazorBeachBasket\\Components\\Pages",
     "\\BlazorBeachBasket\\wwwroot"
   ],
-  "SelectedNode": "\\BlazorBeachBasket.sln",
+  "SelectedNode": "\\BlazorBeachBasket\\Components\\Pages\\Login.razor",
   "PreviewInSolutionExplorer": false
 }

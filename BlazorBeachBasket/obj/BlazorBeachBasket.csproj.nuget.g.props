@@ -13,4 +13,7 @@
     <SourceRoot Include="C:\Users\mkbof\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)blazor.geolocation\8.0.0\buildTransitive\Blazor.Geolocation.props" Condition="Exists('$(NuGetPackageRoot)blazor.geolocation\8.0.0\buildTransitive\Blazor.Geolocation.props')" />
+  </ImportGroup>
 </Project>

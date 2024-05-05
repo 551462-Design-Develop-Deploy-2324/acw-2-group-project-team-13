@@ -1,38 +1,164 @@
-﻿@page "/Driver/{driverId:int}"
+﻿@page "/driver/{driverId:int}"
+@rendermode InteractiveServer
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.JSInterop
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+@using Db
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Beach Basket Courier View</title>
-    <link rel="stylesheet" href="Driverstyle.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Beach Basket</h1>
-        <h2>Orders to be delivered:</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75465.55638880543!2d-0.33198575000002606!3d53.76637074999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d6208f7c0160ad%3A0x6d447e9d82f130ff!2sHull!5e0!3m2!1sen!2suk!4v1714004263866!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <!--This is an embedded map of hull for back end geolocation-->
-        <ul>
-            <li>
-                <a href="@("https://www.google.com/maps/dir/53.7951296,-0.3683238/390+Cottingham+Rd,+Hull+HU6+8QE/@53.7930623,-0.4196797,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x4878bfa2bd496e95:0x55e70c52d2118388!2m2!1d-0.3820541!2d53.7703085!3e0?entry=ttu")">6 piece mcnuggets for 21 Newland Avenue</a>
-            </li>
-            <!--This is where your usable list would go so the driver could take orders-->
-        </ul>
-        <button style="background-color: lightgreen; color: white; font-size: 24px;" onclick="myFunction()">Complete order</button>
-        <script>
-            function myFunction()
+<h1>Beach Basket</h1>
+<h2>Orders to be delivered:</h2>
+
+<p>@LocationDisplay</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75465.55638880543!2d-0.33198575000002606!3d53.76637074999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d6208f7c0160ad%3A0x6d447e9d82f130ff!2sHull!5e0!3m2!1sen!2suk!4v1714004263866!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- This is an embedded map of Hull for back end geolocation -->
+<div class="orders-container">
+    <ul>
+        @foreach (Order order in database.Orders)
+        {
+            if (order.order_driverId == driverId && order.orderStatus_str != "Delivered")
             {
-                alert("order has been completed")
+                <li>
+                    <button type="button" @onclick="() => OpenModalOrder(order)">
+                        Order (0) (@order.orderStatus_str) : @database.Restaurants.FirstOrDefault(o => o.RestaurantId == order.order_restaurantId).RestaurantName
+                    -> @database.Customers.FirstOrDefault(o=>o.CustomerId == order.order_customerId).CustomerName</button>
+                </li>
             }
-        </script>
-        <!--This is the button the courier would click in order to confirm that an order was completed-->
-    </div>
-</body>
-</html>
+        }
+    </ul>
+</div>
 
-@code{
+<button @onclick="@Logout" style="background-color: darkred">Logout</button>
+
+<div class="modal" tabindex="-1" role="dialog" style="display: @ModalDisplayOrder">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Order Details</h5>
+                <button type="button" class="close" @onclick="CloseModalOrder">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h6 class="modal-title">Order Id: @CurrentOrder.orderId</h6>
+                <h6 class="modal-title">Order Status: @CurrentOrder.orderStatus_str</h6>
+                <br />
+                <p><strong>Restaurant Address:</strong> @database.Restaurants.FirstOrDefault(o => o.RestaurantId == CurrentOrder.order_restaurantId).RestaurantName</p>
+                <p><strong>Restaurant Address:</strong> <a href="@($"https://www.google.com/maps/dir//{@database.Restaurants.FirstOrDefault(o=>o.RestaurantId == CurrentOrder.order_restaurantId).RestaurantAddress}")"> @database.Restaurants.FirstOrDefault(o => o.RestaurantId == CurrentOrder.order_restaurantId).RestaurantAddress </a></p>
+                <button type="button" @onclick="OpenModalConfirmPickup">Confirm Order Pickup</button>
+                <br />
+                <br />
+                <p><strong>Customer Name:</strong> @database.Customers.FirstOrDefault(o => o.CustomerId == CurrentOrder.order_customerId).CustomerName </p>
+                <p><strong>Customer Address:</strong> <a href="@($"https://www.google.com/maps/dir//{@database.Customers.FirstOrDefault(o=>o.CustomerId == CurrentOrder.order_customerId).CustomerAddress}")"> @database.Customers.FirstOrDefault(o => o.CustomerId == CurrentOrder.order_customerId).CustomerAddress </a></p>
+                <button type="button" @onclick="OpenModalConfirmDelivered">Confirm Order Delivered</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" tabindex="-1" role="dialog" style="display: @ModalDisplayConfirmPickup">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Confirm Order Pick Up?</h5>
+                <button type="button" class="close" @onclick="CloseModalConfirmPickup">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <button type="button" @onclick="OrderPickup" style="background-color: green; color:black">Confirm</button>
+                <button type="button" @onclick="CloseModalConfirmPickup" style="background-color: darkred; color:black">Reject</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" style="display: @ModalDisplayConfirmDelivered">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Confirm Order Delivered?</h5>
+                <button type="button" class="close" @onclick="CloseModalConfirmDelivered">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <button type="button" @onclick="OrderDelivered" style="background-color: green; color:black">Confirm</button>
+                <button type="button" @onclick="CloseModalConfirmDelivered" style="background-color: darkred; color:black">Reject</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+@code {
     [Parameter]
-    public int driverId {get; set;}
+    public int driverId { get; set; }
+
+    Database database = new Database();
+    protected override void OnInitialized()
+    {
+        database.ImportData();
+        database.AssingData();
+
+    }
+    private string LocationDisplay { get; set; }
+
+    public string ModalDisplayOrder = "none";
+    public string ModalDisplayConfirmPickup = "none";
+    public string ModalDisplayConfirmDelivered = "none";
+
+    Order CurrentOrder = new Order();
+    public void CloseModalOrder()
+    {
+        ModalDisplayOrder = "none";
+        CurrentOrder = new Order();
+    }
+    void OpenModalOrder(Order order)
+    {
+        ModalDisplayOrder = "block";
+        CurrentOrder = order;
+    }
+
+    public void CloseModalConfirmPickup()
+    {
+        ModalDisplayConfirmPickup = "none";
+    }
+    void OpenModalConfirmPickup()
+    {
+        ModalDisplayConfirmPickup = "block";
+    }
+
+    void CloseModalConfirmDelivered()
+    {
+        ModalDisplayConfirmDelivered = "none";
+    }
+    void OpenModalConfirmDelivered()
+    {
+        ModalDisplayConfirmDelivered = "block";
+    }
+
+    public void Logout()
+    {
+        NavigationManager.NavigateTo("/login");
+    }
+
+    private void OrderDelivered()
+    {
+
+        CurrentOrder.orderStatus_str = "Delivered";
+        CloseModalConfirmDelivered();
+        CloseModalOrder();
+        database.ExportData();
+    }
+
+    public void OrderPickup()
+    {
+        CurrentOrder.orderStatus_str = "Enroute";
+        database.ExportData();
+        CloseModalConfirmPickup();
+    }
 }

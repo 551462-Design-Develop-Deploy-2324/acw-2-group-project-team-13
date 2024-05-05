@@ -45,8 +45,16 @@
       "PackagePath": "staticwebassets\\Images\\Checkout_visa_logo.png"
     },
     {
-      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\Foodie'sDelight_logo.jpg",
-      "PackagePath": "staticwebassets\\Images\\Foodie'sDelight_logo.jpg"
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\Cookie-Dough-Ice-Cream-9.jpg",
+      "PackagePath": "staticwebassets\\Images\\Cookie-Dough-Ice-Cream-9.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\DrinksRUs.jpg",
+      "PackagePath": "staticwebassets\\Images\\DrinksRUs.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\FoodiesDelightlogo.jpg",
+      "PackagePath": "staticwebassets\\Images\\FoodiesDelightlogo.jpg"
     },
     {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\Homepage_accessories_on_sand.jpeg",
@@ -117,6 +125,10 @@
       "PackagePath": "staticwebassets\\Images\\Login_google_logo_2.png"
     },
     {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\Rainbow_Chaser_Sunglasses-Rainbow-Front.webp",
+      "PackagePath": "staticwebassets\\Images\\Rainbow_Chaser_Sunglasses-Rainbow-Front.webp"
+    },
+    {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\Sporty swimsuits.avif",
       "PackagePath": "staticwebassets\\Images\\Sporty swimsuits.avif"
     },
@@ -127,6 +139,22 @@
     {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\beach.png",
       "PackagePath": "staticwebassets\\Images\\beach.png"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\bread icecream.jpg",
+      "PackagePath": "staticwebassets\\Images\\bread icecream.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\butterpecaniceream.jpg",
+      "PackagePath": "staticwebassets\\Images\\butterpecaniceream.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\cheeseburger.jpg",
+      "PackagePath": "staticwebassets\\Images\\cheeseburger.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\chickenburger.jpg",
+      "PackagePath": "staticwebassets\\Images\\chickenburger.jpg"
     },
     {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\eimage1.jpg",
@@ -191,6 +219,22 @@
     {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\eimage9.jpg",
       "PackagePath": "staticwebassets\\Images\\eimage9.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\fishnchips.jpg",
+      "PackagePath": "staticwebassets\\Images\\fishnchips.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\fries.jpg",
+      "PackagePath": "staticwebassets\\Images\\fries.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\icecoffee.jpg",
+      "PackagePath": "staticwebassets\\Images\\icecoffee.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\icetea.jpg",
+      "PackagePath": "staticwebassets\\Images\\icetea.jpg"
     },
     {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\icon.png",
@@ -297,8 +341,16 @@
       "PackagePath": "staticwebassets\\Images\\item_strawberryshake.jpg"
     },
     {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\milkshake.jpg",
+      "PackagePath": "staticwebassets\\Images\\milkshake.jpg"
+    },
+    {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\palm.png",
       "PackagePath": "staticwebassets\\Images\\palm.png"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\rainbowshades.jpg",
+      "PackagePath": "staticwebassets\\Images\\rainbowshades.jpg"
     },
     {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\slide1.jpg",
@@ -311,6 +363,10 @@
     {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\slide3.jpg",
       "PackagePath": "staticwebassets\\Images\\slide3.jpg"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\spadebucket.jpg",
+      "PackagePath": "staticwebassets\\Images\\spadebucket.jpg"
     },
     {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\store 3.jpg",
@@ -397,6 +453,10 @@
       "PackagePath": "staticwebassets\\Images\\store9.webp"
     },
     {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\sunblock.jpg",
+      "PackagePath": "staticwebassets\\Images\\sunblock.jpg"
+    },
+    {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\sunglasses.jpg",
       "PackagePath": "staticwebassets\\Images\\sunglasses.jpg"
     },
@@ -411,6 +471,10 @@
     {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\toys.webp",
       "PackagePath": "staticwebassets\\Images\\toys.webp"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\toysemporium.jpg",
+      "PackagePath": "staticwebassets\\Images\\toysemporium.jpg"
     },
     {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Login.css",
@@ -439,6 +503,10 @@
     {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\driverPov.html",
       "PackagePath": "staticwebassets\\driverPov.html"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\geolocation.js",
+      "PackagePath": "staticwebassets\\geolocation.js"
     },
     {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\newaccount.css",

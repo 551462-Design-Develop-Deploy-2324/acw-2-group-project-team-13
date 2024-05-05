@@ -38,3 +38,5 @@ M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\refint\
 M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\BlazorBeachBasket.pdb
 M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\BlazorBeachBasket.genruntimeconfig.cache
 M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\ref\BlazorBeachBasket.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\bin\Release\net8.0\Blazor.Geolocation.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\bin\Release\net8.0\Blazor.Serialization.dll

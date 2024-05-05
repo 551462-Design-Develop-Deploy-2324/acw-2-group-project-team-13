@@ -12,9 +12,7 @@
     <a href="@($"/customerhome/{@customerId}?refresh=true")" class="logo">BEACH BASKET</a>
     <input type="text" id="searchInput" class="search-bar">
     <div class="icons">
-        <span class="fas fa-user" @onclick="ViewAccount"></span>
-        <span class="heart-icon">&#x2661;</span>
-        <span class='fas fa-shopping-basket' style='font-size:28px'></span>
+        <a href="/login"><img src="Images/logout.png" onclick="viewAccount()" style='width: 25px' /> </a>
     </div>
 </div>
 

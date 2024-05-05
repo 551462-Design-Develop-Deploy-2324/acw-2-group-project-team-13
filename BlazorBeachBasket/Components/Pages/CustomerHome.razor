@@ -1,5 +1,6 @@
 ﻿@page "/customerhome/{customerId:int}"
 @inject NavigationManager nav
+
 @using Db
 
 <head>
@@ -14,9 +15,7 @@
         <div class="logo">BEACH BASKET</div>
 
         <div class="icons">
-            <span class="fas fa-user" onclick="viewAccount()"></span>
-            <span class="heart-icon">&#x2661;</span>
-            <span class='fas fa-shopping-basket' style='font-size:28px'></span>
+            <a href="/login"><img src="Images/logout.png" onclick="viewAccount()" style='width: 25px' /> </a>
         </div>
     </div>
 
@@ -37,7 +36,7 @@
             @for (int i = 0; i < 5; i++)
             {
                 <div class="store">
-                    <img src="@database.Restaurants[i].Restaurant_img_link" alt="@database.Restaurants[i].RestaurantName">
+                    <a href="@($"/customerstore/{@customerId}/{@database.Restaurants[i].RestaurantId}?refresh=true")"><img src="@database.Restaurants[i].Restaurant_img_link" alt="@database.Restaurants[i].RestaurantName"></a>
                     <div class="store-details">
                         <div class="store-name">@database.Restaurants[i].RestaurantName</div>
                     </div>

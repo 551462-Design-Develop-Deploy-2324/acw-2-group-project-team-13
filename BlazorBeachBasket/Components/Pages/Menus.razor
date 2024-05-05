@@ -164,9 +164,10 @@
     private double addItem_newPrice;
 
     void AddItemToDb(){
-        addItem_newId = restaurant.Rest_Menu.Last().ItemId + 1;
+        addItem_newId = database.MenuItems.Last().ItemId + 1;
         MenuItem newMenuItem = new MenuItem(addItem_newId,addItem_newName,addItem_newPrice,RestId);
         restaurant.Rest_Menu.Add(newMenuItem);
+        database.MenuItems.Add(newMenuItem);
         database.ExportData();
         ToggleAddItemModal();
     }
@@ -181,6 +182,7 @@
         try
         {
             restaurant.Rest_Menu.Remove(itemToDelete);
+            database.MenuItems.Remove(itemToDelete);
             database.ExportData();
             ToggleConfirmationModal();
         }

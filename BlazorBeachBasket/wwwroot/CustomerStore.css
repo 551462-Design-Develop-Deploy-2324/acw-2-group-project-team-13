@@ -5,6 +5,35 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
+.top-section {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    border: 0px solid transparent;
+    position: flex;
+    text-align: center;
+    z-index: 0; /* Increase z-index to make the navigation bar appear on top */
+}
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    margin-right: 20px;
+    font-weight: 900;
+    color: white;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+    .icons span {
+        font-size: 28px;
+        margin-left: 10px;
+    }
+
 /* Container */
 .container {
     max-width: 1200px;

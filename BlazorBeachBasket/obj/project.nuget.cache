@@ -1,12 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "gWLO83QOSHJmKbT37XjcWPmGDG+BEi70Mi1ADGLrYwmbObK4cKX0aHLmy6UAOfeo/GnkcgGymVzN/dCtxAlYmg==",
+  "dgSpecHash": "FAh0At17aM2ZYMCLUng0VvH220VAFuxPnXc3V0Xsg5b2022yBY2PqDYuzJunr2omYhGiSFjCPAwt+0/qSnlSIA==",
   "success": true,
   "projectFilePath": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\BlazorBeachBasket.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mkbof\\.nuget\\packages\\blazor.geolocation\\8.0.0\\blazor.geolocation.8.0.0.nupkg.sha512",
+    "C:\\Users\\mkbof\\.nuget\\packages\\blazor.serialization\\8.0.0\\blazor.serialization.8.0.0.nupkg.sha512",
+    "C:\\Users\\mkbof\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.4\\microsoft.aspnetcore.authorization.8.0.4.nupkg.sha512",
+    "C:\\Users\\mkbof\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.4\\microsoft.aspnetcore.components.8.0.4.nupkg.sha512",
+    "C:\\Users\\mkbof\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\8.0.4\\microsoft.aspnetcore.components.analyzers.8.0.4.nupkg.sha512",
+    "C:\\Users\\mkbof\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\8.0.4\\microsoft.aspnetcore.components.forms.8.0.4.nupkg.sha512",
+    "C:\\Users\\mkbof\\.nuget\\packages\\microsoft.aspnetcore.components.web\\8.0.4\\microsoft.aspnetcore.components.web.8.0.4.nupkg.sha512",
+    "C:\\Users\\mkbof\\.nuget\\packages\\microsoft.aspnetcore.metadata\\8.0.4\\microsoft.aspnetcore.metadata.8.0.4.nupkg.sha512",
+    "C:\\Users\\mkbof\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\mkbof\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\mkbof\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.1\\microsoft.extensions.logging.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\mkbof\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "C:\\Users\\mkbof\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\mkbof\\.nuget\\packages\\microsoft.jsinterop\\8.0.4\\microsoft.jsinterop.8.0.4.nupkg.sha512",
     "C:\\Users\\mkbof\\.nuget\\packages\\sqlite\\3.13.0\\sqlite.3.13.0.nupkg.sha512",
     "C:\\Users\\mkbof\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.118\\stub.system.data.sqlite.core.netstandard.1.0.118.nupkg.sha512",
-    "C:\\Users\\mkbof\\.nuget\\packages\\system.data.sqlite.core\\1.0.118\\system.data.sqlite.core.1.0.118.nupkg.sha512"
+    "C:\\Users\\mkbof\\.nuget\\packages\\system.data.sqlite.core\\1.0.118\\system.data.sqlite.core.1.0.118.nupkg.sha512",
+    "C:\\Users\\mkbof\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

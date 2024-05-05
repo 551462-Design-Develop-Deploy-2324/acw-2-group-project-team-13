@@ -6,9 +6,15 @@
 <head>
     <PageTitle>@curRest.RestaurantName</PageTitle>
     <link rel="stylesheet" href="CustomerStore.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
-
+<div class="top-section">
+    <a href="@($"/customerhome/{@CustId}?refresh=true")" class="logo">BEACH BASKET</a>
+    <div class="icons">
+        <a href="/login"><img src="Images/logout.png" onclick="viewAccount()"style='width: 25px' /> </a>
+    </div>
+</div>
 <div class="container">
     <div class="max-w-screen-md mx-auto">
         <!-- Logo -->
@@ -86,7 +92,7 @@
     @foreach (MenuItem menuItem in curRest.Rest_Menu)
     {
         <div class="product-card">
-            <img src="@menuItem.Item_Image" alt="Product Image">
+            <img src="@menuItem.Item_Image.ImgLink" alt="Product Image">
             <h2>@menuItem.ItemName</h2>
             <p>GBP £@menuItem.ItemPrice</p>
             <button class="btn" type="button" @onclick="() => AddToCart(menuItem)">Add to Cart</button>

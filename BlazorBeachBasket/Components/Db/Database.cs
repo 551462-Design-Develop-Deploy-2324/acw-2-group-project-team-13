@@ -201,6 +201,17 @@ namespace BlazorBeachBasket.Components.Db
             {
                 menuItem.Item_Image = Images.FirstOrDefault(o => o.Img_ItemId == menuItem.ItemId && o.Img_ItemType == 1);
             }
+
+            foreach(Driver driver in Drivers)
+            {
+                foreach(Order order in Orders)
+                {
+                    if(order.order_driverId == driver.DriverId)
+                    {
+                        driver.driverOrders.Add(order);
+                    }
+                }
+            }
         }
         public void ExportData()
         {
@@ -293,7 +304,7 @@ namespace BlazorBeachBasket.Components.Db
             cmd.ExecuteNonQuery();
             foreach (Image img in Images)
             {
-                sql = $"Insert into ImgLinks values ({img.ImgId},'{img.ImgLink}',{img.Img_ItemType},{img.Img_ItemId});";
+                sql = $"Insert into Images values ({img.ImgId},'{img.ImgLink}',{img.Img_ItemType},{img.Img_ItemId});";
                 cmd = new SQLiteCommand(sql, connection);
                 cmd.ExecuteNonQuery();
             }
@@ -377,7 +388,7 @@ namespace BlazorBeachBasket.Components.Db
         public string DriverName { get; set; }
         public string DriverPhone { get; set; }
         public int Driver_UserId { get; set;}
-
+        public List<Order> driverOrders = new List<Order>();
         public Driver(int driverId, string driverName, string driverPhone, int driver_UserId)
         {
             DriverId = driverId;

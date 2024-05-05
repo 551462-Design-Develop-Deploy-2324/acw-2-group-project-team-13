@@ -166,6 +166,9 @@
     void AddItemToDb(){
         addItem_newId = database.MenuItems.Last().ItemId + 1;
         MenuItem newMenuItem = new MenuItem(addItem_newId,addItem_newName,addItem_newPrice,RestId);
+        Image newItemImage = new Image(database.Images.Last().ImgId + 1, "Images/strawberry.jpg", 1, newMenuItem.ItemId);
+        newMenuItem.Item_Image = newItemImage;
+        database.Images.Add(newItemImage);
         restaurant.Rest_Menu.Add(newMenuItem);
         database.MenuItems.Add(newMenuItem);
         database.ExportData();

@@ -69,7 +69,12 @@
                                     @foreach (MenuItem menuItem in zorder.Order_items)
                                     {
                                         <li>
-                                            @menuItem.ItemName
+                                            @try{
+                                                @menuItem.ItemName
+                                            }
+                                            catch{
+
+                                            }
                                         </li>
                                     }
                                 </ul>

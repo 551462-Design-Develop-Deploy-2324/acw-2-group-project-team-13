@@ -32,7 +32,7 @@
             <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
         </div>
         <div class="form-group">
-            <textarea id="address" name="address" rows="3" placeholder="Address" required></textarea>
+            <input id="address" name="address" rows="3" placeholder="Address" required @bind-value="newAddress">
         </div>
 
         <div class="form-group">
@@ -69,11 +69,13 @@
     Database database = new Database();
     Order order;
     int customerId;
+    public string newAddress = "";
     protected override void OnInitialized()
     {
         database.ImportData();
         database.AssingData();
         order = database.Orders.FirstOrDefault(o => o.orderId == orderId);
+
         customerId = order.order_customerId;
     }
     void CancelOrder()
@@ -83,6 +85,8 @@
         nav.NavigateTo($"/customerhome/{customerId}");
     }
     void ToAfterPurchase(){
+        database.Customers.FirstOrDefault(o => o.CustomerId == customerId).CustomerAddress = newAddress;
+        database.ExportData();
         nav.NavigateTo($"/afterpurchase/{customerId}");
     }
 }

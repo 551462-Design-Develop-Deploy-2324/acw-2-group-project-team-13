@@ -7,6 +7,15 @@ M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\
 M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\BlazorBeachBasket.pdb
 M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\Blazor.Geolocation.dll
 M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\Blazor.Serialization.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.Authorization.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.Components.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.Components.Forms.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.Components.Web.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.Metadata.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.Logging.Abstractions.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.Options.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\Microsoft.JSInterop.dll
 M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\System.Data.SQLite.dll
 M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\runtimes\linux-x64\native\libsqlite3.so
 M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\PubTmp\Out\runtimes\osx-x64\native\libsqlite3.dylib

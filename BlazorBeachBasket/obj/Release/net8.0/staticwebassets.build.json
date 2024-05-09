@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "didS0NPadMGkYXDZJ/HUqQqyYjzdim53vTApoD4z75g=",
+  "Hash": "HTBuc066b23MXiIuim3R53kw758XuQ2FskxrCh/zMZM=",
   "Source": "BlazorBeachBasket",
   "BasePath": "_content/BlazorBeachBasket",
   "Mode": "Default",
@@ -300,6 +300,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\geolocation.js"
+    },
+    {
+      "Identity": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\geolocationWrapper.js",
+      "SourceId": "BlazorBeachBasket",
+      "SourceType": "Discovered",
+      "ContentRoot": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\",
+      "BasePath": "_content/BlazorBeachBasket",
+      "RelativePath": "geolocationWrapper.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\geolocationWrapper.js"
     },
     {
       "Identity": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\bblogo.jpg",
@@ -1746,6 +1765,25 @@
       "OriginalItemSpec": "wwwroot\\Images\\Login_google_logo_2.png"
     },
     {
+      "Identity": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\logout.png",
+      "SourceId": "BlazorBeachBasket",
+      "SourceType": "Discovered",
+      "ContentRoot": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\",
+      "BasePath": "_content/BlazorBeachBasket",
+      "RelativePath": "Images/logout.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\logout.png"
+    },
+    {
       "Identity": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\milkshake.jpg",
       "SourceId": "BlazorBeachBasket",
       "SourceType": "Discovered",
@@ -2314,6 +2352,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\store9.webp"
+    },
+    {
+      "Identity": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\strawberry.jpg",
+      "SourceId": "BlazorBeachBasket",
+      "SourceType": "Discovered",
+      "ContentRoot": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\",
+      "BasePath": "_content/BlazorBeachBasket",
+      "RelativePath": "Images/strawberry.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\strawberry.jpg"
     },
     {
       "Identity": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\sunblock.jpg",

@@ -40,3 +40,12 @@ M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\BlazorB
 M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\obj\Release\net8.0\ref\BlazorBeachBasket.dll
 M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\bin\Release\net8.0\Blazor.Geolocation.dll
 M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\bin\Release\net8.0\Blazor.Serialization.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\bin\Release\net8.0\Microsoft.AspNetCore.Authorization.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\bin\Release\net8.0\Microsoft.AspNetCore.Components.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\bin\Release\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\bin\Release\net8.0\Microsoft.AspNetCore.Components.Web.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\bin\Release\net8.0\Microsoft.AspNetCore.Metadata.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\bin\Release\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\bin\Release\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\bin\Release\net8.0\Microsoft.Extensions.Options.dll
+M:\Code\acw-2-group-project-team-13\BlazorBeachBasket\bin\Release\net8.0\Microsoft.JSInterop.dll

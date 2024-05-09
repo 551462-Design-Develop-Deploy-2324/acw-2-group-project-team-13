@@ -341,6 +341,10 @@
       "PackagePath": "staticwebassets\\Images\\item_strawberryshake.jpg"
     },
     {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\logout.png",
+      "PackagePath": "staticwebassets\\Images\\logout.png"
+    },
+    {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\milkshake.jpg",
       "PackagePath": "staticwebassets\\Images\\milkshake.jpg"
     },
@@ -453,6 +457,10 @@
       "PackagePath": "staticwebassets\\Images\\store9.webp"
     },
     {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\strawberry.jpg",
+      "PackagePath": "staticwebassets\\Images\\strawberry.jpg"
+    },
+    {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\Images\\sunblock.jpg",
       "PackagePath": "staticwebassets\\Images\\sunblock.jpg"
     },
@@ -507,6 +515,10 @@
     {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\geolocation.js",
       "PackagePath": "staticwebassets\\geolocation.js"
+    },
+    {
+      "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\geolocationWrapper.js",
+      "PackagePath": "staticwebassets\\geolocationWrapper.js"
     },
     {
       "Id": "M:\\Code\\acw-2-group-project-team-13\\BlazorBeachBasket\\wwwroot\\newaccount.css",
